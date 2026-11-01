@@ -1,0 +1,29 @@
+{
+  "candidate": "requirement-conditioned-generation-v1-role-prompt-only",
+  "generator": "gemini-3.5-flash-lite",
+  "files": {
+    "src/chat_rag_roles_prompt_only.py": "a904ba35fea07d6262e9fe1c607a146a2d1b1d743091b42bbefb99d461da242b",
+    "src/chat_rag_source_planned.py": "f457dd7559360629e471bf762ca91b13e93a106511a86c610cafa27014e95eac",
+    "src/chat_rag_gemini.py": "0fe1f02f01977f92f5e260e89932f4e3cd1c7b943d70dd8eaf5b353223a701af",
+    "src/chat_rag_gemini_v2.py": "0c4bc4600467bf009b35f1a09c097fff88ab0044743ae718c1903afc1064a7e9",
+    "src/legal_requirement_units.py": "6f346e3c8af1857899d1e58c801da789dea042b4d2507f037754c6f56e1e7845",
+    "src/audit_requirement_coverage.py": "e6b51fa5fd19a9fdccf29edb589098a3d6f27b9e542869c3be69d6a8a16b9512",
+    "src/legal_source_plan.py": "3703af6f663518e7a030cad8b56b9f6627809528d09254f4f2a1b8c8a12175b0",
+    "src/evaluate_query_expansion.py": "718a9a35551a81da7e45b63a5d99903c481380aa55a8eb5aa15c8d5d5a101a1f",
+    "src/evaluate_character_retrieval.py": "1ec4b2d18eab01a964b6790bf98b981557af265d143211bb15571730bcb74b06",
+    "src/search_reranked.py": "b8fe7a9d8c37306179b3d0aec6043cb304bcc9fa524f0037523a8195b4b8937f",
+    "src/search_hybrid.py": "775adc7339f44123f2682ceca6bd4b8b00a14c86b6ea8bad9685ce137413907e",
+    "src/search_dense.py": "9dbcf2b76627533fa873e7718adf3421503e54a4a6c1bc17cf6365db6a4cae12",
+    "data/processed/legal_articles.json": "242b23fa1eba69ce577812d939404e6827213caca9ae25a08412b034ee106b86",
+    "data/checklists/legal_requirements_v2.json": "32c062a625ddf2f4b369ebfdf13e9831e5d9a7bdbbb1691105b739b12c42ca33",
+    "data/indexes/dense_e5/index.faiss": "6f25aec351b8f43f4dd979e47f297e0a2b4390c228b58681b764273fd4579f6e",
+    "data/indexes/dense_e5/metadata.json": "3f730b6d245295a5279a304df34d57adb797d25ff9fe14aedfbb979e961b7715",
+    "app.py": "85562c53f230dc6d576ae82bc237f98f5438861a33db21186b7c3c6e563bd032",
+    "src/rag_dashboard_backend.py": "4143d09dc3d0063b1083c620c47a38c39c2256f7d0c7b21da0ca029ef88b27f7",
+    "assets/dashboard.css": "fd3f1b81c7fa0dbfeeadf4e3a82dd4f988c38b22b3144f2a023921d9cb5013c9"
+  },
+  "role_checks": "instructions only; source/evidence checks retained",
+  "comparison_note": "Cached tools; same retrieval/prompt/validation as evaluated candidate.",
+  "ui_version": "arabic-rtl-v2",
+  "project_name": "Daleel"
+}

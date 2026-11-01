@@ -1,0 +1,113 @@
+{
+  "rendering_path_tests": [
+    {
+      "entrypoint": "app.py",
+      "language": "ar",
+      "page": "السؤال والمراجع",
+      "result": "pass",
+      "events": 17
+    },
+    {
+      "entrypoint": "app.py",
+      "language": "ar",
+      "page": "تحليل فجوات PDPL",
+      "result": "pass",
+      "events": 21
+    },
+    {
+      "entrypoint": "app.py",
+      "language": "ar",
+      "page": "المواد القانونية",
+      "result": "pass",
+      "events": 18
+    },
+    {
+      "entrypoint": "evaluation_dashboard.py",
+      "language": "ar",
+      "view": "rag",
+      "result": "pass",
+      "events": 25
+    },
+    {
+      "entrypoint": "evaluation_dashboard.py",
+      "language": "ar",
+      "view": "classifier",
+      "result": "pass",
+      "events": 19
+    },
+    {
+      "entrypoint": "evaluation_dashboard.py",
+      "language": "ar",
+      "view": "policies",
+      "result": "pass",
+      "events": 19
+    },
+    {
+      "entrypoint": "app.py",
+      "language": "en",
+      "page": "السؤال والمراجع",
+      "result": "pass",
+      "events": 17
+    },
+    {
+      "entrypoint": "app.py",
+      "language": "en",
+      "page": "تحليل فجوات PDPL",
+      "result": "pass",
+      "events": 21
+    },
+    {
+      "entrypoint": "app.py",
+      "language": "en",
+      "page": "المواد القانونية",
+      "result": "pass",
+      "events": 18
+    },
+    {
+      "entrypoint": "evaluation_dashboard.py",
+      "language": "en",
+      "view": "rag",
+      "result": "pass",
+      "events": 25
+    },
+    {
+      "entrypoint": "evaluation_dashboard.py",
+      "language": "en",
+      "view": "classifier",
+      "result": "pass",
+      "events": 19
+    },
+    {
+      "entrypoint": "evaluation_dashboard.py",
+      "language": "en",
+      "view": "policies",
+      "result": "pass",
+      "events": 19
+    }
+  ],
+  "contrast_pairs": [
+    {
+      "text": "#ffffff",
+      "background": "#1c6548",
+      "ratio": 6.99
+    },
+    {
+      "text": "#204b3a",
+      "background": "#ffffff",
+      "ratio": 9.86
+    },
+    {
+      "text": "#183b35",
+      "background": "#e9f1ec",
+      "ratio": 10.64
+    },
+    {
+      "text": "#455e54",
+      "background": "#f5f8f6",
+      "ratio": 6.59
+    }
+  ],
+  "API_calls": 0,
+  "browser_visual_verification": false,
+  "scope": "Simulated Streamlit rendering paths and static asset contrast, not an actual browser screenshot or live generation test."
+}

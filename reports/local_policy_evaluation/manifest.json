@@ -1,0 +1,17 @@
+{
+  "experiment": "gap-policy-batched-whitespace-validation-v2",
+  "derived_from": "gap-policy-batched-v1",
+  "new_API_calls": 0,
+  "new_generation": false,
+  "reference_changed": false,
+  "model_outputs_changed": false,
+  "validation_change": "Collapse whitespace runs only for matching; return exact original source span. No punctuation, case, letter, spelling, translation, fuzzy matching or disconnected quote concatenation.",
+  "counts": {
+    "valid_requirements": 148,
+    "error_requirements": 32,
+    "exact": 98,
+    "whitespace_only": 53
+  },
+  "input_manifest_sha256": "3d265e3b8b5008a368d3602487970f27a773e696aabf4d41249dd9d83233df5c",
+  "matcher_sha256": "65ea74aeca3fa88fa6a063db22c0efc103894ab13f5a79633864fc3de63b26ec"
+}

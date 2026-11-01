@@ -1,0 +1,109 @@
+{
+  "model": "distilbert-base-uncased",
+  "device": "mps",
+  "train_samples": 3089,
+  "test_samples": 671,
+  "best_epoch": 3,
+  "thresholds": {
+    "Data Retention": 0.35,
+    "Data Security": 0.3,
+    "Do Not Track": 0.2,
+    "First Party Collection/Use": 0.39999999999999997,
+    "International and Specific Audiences": 0.2,
+    "Other": 0.2,
+    "Policy Change": 0.49999999999999994,
+    "Third Party Sharing/Collection": 0.35,
+    "User Access, Edit and Deletion": 0.2,
+    "User Choice/Control": 0.25
+  },
+  "micro_f1": 0.7682177348551361,
+  "macro_f1": 0.670955990901337,
+  "hamming_loss": 0.07868852459016394,
+  "exact_match_accuracy": 0.46795827123695977,
+  "classification_report": {
+    "Data Retention": {
+      "precision": 0.35294117647058826,
+      "recall": 0.2608695652173913,
+      "f1-score": 0.3,
+      "support": 23.0
+    },
+    "Data Security": {
+      "precision": 0.8,
+      "recall": 0.6779661016949152,
+      "f1-score": 0.7339449541284404,
+      "support": 59.0
+    },
+    "Do Not Track": {
+      "precision": 1.0,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.4444444444444444,
+      "support": 7.0
+    },
+    "First Party Collection/Use": {
+      "precision": 0.7839721254355401,
+      "recall": 0.8653846153846154,
+      "f1-score": 0.8226691042047533,
+      "support": 260.0
+    },
+    "International and Specific Audiences": {
+      "precision": 0.847457627118644,
+      "recall": 0.8928571428571429,
+      "f1-score": 0.8695652173913043,
+      "support": 56.0
+    },
+    "Other": {
+      "precision": 0.7030812324929971,
+      "recall": 0.8338870431893688,
+      "f1-score": 0.7629179331306991,
+      "support": 301.0
+    },
+    "Policy Change": {
+      "precision": 0.8571428571428571,
+      "recall": 0.6486486486486487,
+      "f1-score": 0.7384615384615385,
+      "support": 37.0
+    },
+    "Third Party Sharing/Collection": {
+      "precision": 0.9432989690721649,
+      "recall": 0.7656903765690377,
+      "f1-score": 0.8452655889145496,
+      "support": 239.0
+    },
+    "User Access, Edit and Deletion": {
+      "precision": 0.6052631578947368,
+      "recall": 0.4791666666666667,
+      "f1-score": 0.5348837209302325,
+      "support": 48.0
+    },
+    "User Choice/Control": {
+      "precision": 0.9342105263157895,
+      "recall": 0.5071428571428571,
+      "f1-score": 0.6574074074074074,
+      "support": 140.0
+    },
+    "micro avg": {
+      "precision": 0.7897111913357401,
+      "recall": 0.7478632478632479,
+      "f1-score": 0.7682177348551361,
+      "support": 1170.0
+    },
+    "macro avg": {
+      "precision": 0.7827367671943317,
+      "recall": 0.621732730308493,
+      "f1-score": 0.670955990901337,
+      "support": 1170.0
+    },
+    "weighted avg": {
+      "precision": 0.8053336088519584,
+      "recall": 0.7478632478632479,
+      "f1-score": 0.7629015289397615,
+      "support": 1170.0
+    },
+    "samples avg": {
+      "precision": 0.8353204172876304,
+      "recall": 0.8151657086083317,
+      "f1-score": 0.7904442551983536,
+      "support": 1170.0
+    }
+  }
+}

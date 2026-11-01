@@ -1,0 +1,1267 @@
+{
+  "name": "PDPL Copilot - Privacy Policy Text Gap Checklist",
+  "version": "final-editable-v1-2026-10-27",
+  "scope": "privacy_policy_text_only",
+  "status": "team_review_ready_editable_not_legal_certification",
+  "source_files": [
+    "PDPL_Policy_Gap_Checklist.json (17)",
+    "PDPL_Policy_Gap_Checklist_REVISED.json (subchecks)",
+    "PDPL_Checklist_NEW.json (35: 17 notices, 17 duties, 1 right)",
+    "checklist (2).yaml (20 thematic headings)"
+  ],
+  "warnings": [
+    "This is not a certification of PDPL compliance. Missing policy text is not proof of legal violation.",
+    "Collection-time notices may be separate from the published privacy policy.",
+    "Article existence and English excerpts do not verify paragraph numbering or legal interpretation.",
+    "External publication timing and actual processing practices cannot be established from uploaded policy text.",
+    "The policy-text score does not assess whether separate collection-time notices were supplied.",
+    "Exact excerpts in legal_sources may be truncated; do not treat them as full official legal texts."
+  ],
+  "statuses": [
+    "covered",
+    "partially_covered",
+    "missing",
+    "needs_review",
+    "not_applicable",
+    "not_assessed"
+  ],
+  "evaluation_rules": {
+    "policy_text_checks": "Evaluate text-based notice checks only, with supporting policy excerpts.",
+    "external_checks": "Do not infer publication timing or availability from the uploaded policy; return needs_review.",
+    "conditional_checks": "Return needs_review if applicability is unknown; not_applicable only with documented reason.",
+    "contextual_duties": "Never count contextual duties or suggestions as mandatory privacy-policy gaps.",
+    "aggregation": "Do not label a requirement missing solely because a collection notice might exist separately.",
+    "alternative_checks": "For items with aggregation_rule=any_of, meeting one alternative is sufficient; do not double-count missing alternatives.",
+    "deduplicated_checks": "Evaluate rights-exercise mechanism and capacity-specific notices only once.",
+    "scope_boundary": "Only public privacy-policy text is evaluated; separately delivered collection notices and actual company practices are outside this assessment.",
+    "missing_rule": "Missing means the assessed text lacks a relevant disclosure, not that the controller violated the law; where a separate notice may contain it, flag needs_review for legal compliance.",
+    "evidence_rule": "Each covered or partially_covered finding must include an exact excerpt from the supplied policy and its location.",
+    "conditional_logic": "Only evaluate conditional checks when condition is supported by policy text or team-provided context; otherwise needs_review.",
+    "any_of_logic": "N12 is satisfied by an adequate retention period OR, when specifying a period is not possible, adequate criteria. Do not score both as separate mandatory gaps.",
+    "counting": "Aggregate by requirement ID; multiple checks do not automatically count as separate legal gaps.",
+    "external_default": "External checks are needs_review unless external evidence is separately provided; do not infer a failure from silence.",
+    "non_exhaustive": "This is a review-ready editable text-analysis checklist, not an exhaustive legal compliance determination."
+  },
+  "items": [
+    {
+      "id": "N01",
+      "title_ar": "إتاحة سياسة الخصوصية قبل جمع البيانات",
+      "title_en": "Privacy policy availability",
+      "assessment_type": "notice",
+      "applicability": "all",
+      "policy_text_assessment": "external_verification_required",
+      "legal_refs": [
+        "pdpl:12"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:12",
+          "english_excerpt": "The Controller shall use a privacy policy and make it available to Data Subjects for their information prior to collecting their Personal Data. The policy shall specify the purpose of Collection, Personal Data ",
+          "arabic_excerpt": "على جهة التحكم أن تعتمد سياسة للخصوصية، وأن تجعلها متاحة لأصحاب البيانات الشخصية ليطلعوا عليها عند جمع بياناتهم. على أن تشتمل تلك السياسة على تحديد الغرض من جمعها، ومُحتوى البيانات الشخصية المطلوب جمعها، وطريقة",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N01-01",
+          "question_ar": "وجود سياسة خصوصية متاحة لصاحب البيانات",
+          "source_ref": "pdpl:12",
+          "verification_mode": "external",
+          "result": null,
+          "evidence": null,
+          "text_only_default_result": "needs_review",
+          "external_evidence_required": true,
+          "default_policy_text_result": "needs_review"
+        },
+        {
+          "id": "N01-02",
+          "question_ar": "إتاحتها في التوقيت المطلوب عند جمع البيانات",
+          "source_ref": "pdpl:12",
+          "verification_mode": "external",
+          "result": null,
+          "evidence": null,
+          "text_only_default_result": "needs_review",
+          "external_evidence_required": true,
+          "default_policy_text_result": "needs_review"
+        }
+      ],
+      "review_required": true,
+      "notes": "يتطلب التحقق من إتاحة السياسة وتوقيتها خارج النص المرفوع",
+      "source_mappings": [
+        "R01"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N02",
+      "title_ar": "بيان أغراض جمع البيانات",
+      "title_en": "Purposes of collection",
+      "assessment_type": "notice",
+      "applicability": "all",
+      "policy_text_assessment": "text_check",
+      "legal_refs": [
+        "pdpl:12",
+        "pdpl:13",
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:12",
+          "english_excerpt": "The Controller shall use a privacy policy and make it available to Data Subjects for their information prior to collecting their Personal Data. The policy shall specify the purpose of Collection, Personal Data ",
+          "arabic_excerpt": "على جهة التحكم أن تعتمد سياسة للخصوصية، وأن تجعلها متاحة لأصحاب البيانات الشخصية ليطلعوا عليها عند جمع بياناتهم. على أن تشتمل تلك السياسة على تحديد الغرض من جمعها، ومُحتوى البيانات الشخصية المطلوب جمعها، وطريقة",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N02-01",
+          "question_ar": "تحديد غرض أو أغراض واضحة ومحددة لجمع البيانات الشخصية، مع بيان غرض معالجتها عند الجمع المباشر",
+          "source_ref": "pdpl:12",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null,
+          "additional_source_refs": [
+            "pdpl:13",
+            "implementing_regulation:4(1)(c)"
+          ]
+        }
+      ],
+      "review_required": true,
+      "notes": "دمج الأسئلة المتداخلة؛ يُستشهد بالمادة 12 من النظام وبالمادة 13 والمادة 4(1)(ج) للإشعار عند الجمع المباشر.",
+      "source_mappings": [
+        "R03"
+      ],
+      "aggregation": "single_combined_assessment",
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N03",
+      "title_ar": "تحديد أنواع البيانات الشخصية المجموعة",
+      "title_en": "Categories of personal data",
+      "assessment_type": "notice",
+      "applicability": "all",
+      "policy_text_assessment": "text_check",
+      "legal_refs": [
+        "pdpl:12"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:12",
+          "english_excerpt": "The Controller shall use a privacy policy and make it available to Data Subjects for their information prior to collecting their Personal Data. The policy shall specify the purpose of Collection, Personal Data ",
+          "arabic_excerpt": "على جهة التحكم أن تعتمد سياسة للخصوصية، وأن تجعلها متاحة لأصحاب البيانات الشخصية ليطلعوا عليها عند جمع بياناتهم. على أن تشتمل تلك السياسة على تحديد الغرض من جمعها، ومُحتوى البيانات الشخصية المطلوب جمعها، وطريقة",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N03-01",
+          "question_ar": "تحديد فئات أو أنواع البيانات الشخصية المطلوب جمعها",
+          "source_ref": "pdpl:12",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        }
+      ],
+      "review_required": true,
+      "notes": "ذكر أنواع البيانات التي تجمعها الجهة",
+      "source_mappings": [
+        "R04"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N04",
+      "title_ar": "بيان وسائل جمع البيانات ومعالجتها وتخزينها وإتلافها",
+      "title_en": "Means of handling data",
+      "assessment_type": "notice",
+      "applicability": "all",
+      "policy_text_assessment": "text_check",
+      "legal_refs": [
+        "pdpl:12"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:12",
+          "english_excerpt": "The Controller shall use a privacy policy and make it available to Data Subjects for their information prior to collecting their Personal Data. The policy shall specify the purpose of Collection, Personal Data ",
+          "arabic_excerpt": "على جهة التحكم أن تعتمد سياسة للخصوصية، وأن تجعلها متاحة لأصحاب البيانات الشخصية ليطلعوا عليها عند جمع بياناتهم. على أن تشتمل تلك السياسة على تحديد الغرض من جمعها، ومُحتوى البيانات الشخصية المطلوب جمعها، وطريقة",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N04-01",
+          "question_ar": "توضيح طريقة جمع البيانات الشخصية",
+          "source_ref": "pdpl:12",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        },
+        {
+          "id": "N04-02",
+          "question_ar": "توضيح كيفية معالجة البيانات",
+          "source_ref": "pdpl:12",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        },
+        {
+          "id": "N04-03",
+          "question_ar": "توضيح وسيلة حفظ البيانات",
+          "source_ref": "pdpl:12",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        },
+        {
+          "id": "N04-04",
+          "question_ar": "توضيح كيفية إتلاف البيانات",
+          "source_ref": "pdpl:12",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        }
+      ],
+      "review_required": true,
+      "notes": "شرح الوسائل المذكورة في السياسة",
+      "source_mappings": [
+        "R01",
+        "R05",
+        "R14"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N05",
+      "title_ar": "تعريف صاحب البيانات بحقوقه وكيفية ممارستها",
+      "title_en": "Rights and exercise mechanism",
+      "assessment_type": "notice",
+      "applicability": "all",
+      "policy_text_assessment": "text_check",
+      "legal_refs": [
+        "pdpl:12",
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:12",
+          "english_excerpt": "The Controller shall use a privacy policy and make it available to Data Subjects for their information prior to collecting their Personal Data. The policy shall specify the purpose of Collection, Personal Data ",
+          "arabic_excerpt": "على جهة التحكم أن تعتمد سياسة للخصوصية، وأن تجعلها متاحة لأصحاب البيانات الشخصية ليطلعوا عليها عند جمع بياناتهم. على أن تشتمل تلك السياسة على تحديد الغرض من جمعها، ومُحتوى البيانات الشخصية المطلوب جمعها، وطريقة",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N05-01",
+          "question_ar": "توضيح حقوق صاحب البيانات الشخصية",
+          "source_ref": "pdpl:12",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        },
+        {
+          "id": "N05-02",
+          "question_ar": "توضيح الوسائل أو الخطوات التي يمكن لصاحب البيانات استخدامها لممارسة حقوقه",
+          "source_ref": "pdpl:12",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null,
+          "supporting_source_refs": [
+            "implementing_regulation:4"
+          ]
+        }
+      ],
+      "review_required": true,
+      "notes": "يُقيّم بيان الحقوق وآلية ممارستها مرة واحدة؛ الإشعار عند الجمع المباشر قد يكون منفصلًا عن السياسة المنشورة.",
+      "source_mappings": [
+        "R11",
+        "R12"
+      ],
+      "aggregation_rule": "all_distinct_checks; no_duplicate_scoring",
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N06",
+      "title_ar": "هوية جهة التحكم ووسائل التواصل",
+      "title_en": "Controller identity and contacts",
+      "assessment_type": "notice",
+      "applicability": "direct_collection",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "implementing_regulation:4",
+        "pdpl:13"
+      ],
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        },
+        {
+          "ref": "pdpl:13",
+          "english_excerpt": "When collecting Personal Data directly from the Data Subject, the Controller shall take appropriate measures to inform the Data Subject of the following upon Collection: 1- The legal basis for collecting their ",
+          "arabic_excerpt": "على جهة التحكم، في حالة جمع البيانات الشخصية من صاحبها مباشرةً، اتخاذ الوسائل الكافية لإحاطته علماً بالعناصر الآتية عند البدء في جمع بياناته: 1- المسوغ النظامي لجمع بياناته الشخصية. 2- الغرض من جمع بياناته الشخ",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N06-01",
+          "question_ar": "تحديد الاسم النظامي أو هوية جهة التحكم",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        },
+        {
+          "id": "N06-02",
+          "question_ar": "تحديد بيانات التواصل وقنوات حماية البيانات",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        }
+      ],
+      "review_required": true,
+      "notes": "هوية الجهة وقنوات التواصل المعنية بالبيانات",
+      "source_mappings": [
+        "R02"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N07",
+      "title_ar": "الأساس النظامي للجمع والمعالجة",
+      "title_en": "Legal basis",
+      "assessment_type": "notice",
+      "applicability": "direct_collection",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "pdpl:13",
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:13",
+          "english_excerpt": "When collecting Personal Data directly from the Data Subject, the Controller shall take appropriate measures to inform the Data Subject of the following upon Collection: 1- The legal basis for collecting their ",
+          "arabic_excerpt": "على جهة التحكم، في حالة جمع البيانات الشخصية من صاحبها مباشرةً، اتخاذ الوسائل الكافية لإحاطته علماً بالعناصر الآتية عند البدء في جمع بياناته: 1- المسوغ النظامي لجمع بياناته الشخصية. 2- الغرض من جمع بياناته الشخ",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N07-01",
+          "question_ar": "بيان المسوغ النظامي لجمع البيانات الشخصية ومعالجتها عند الجمع المباشر",
+          "source_ref": "pdpl:13",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null,
+          "additional_source_refs": [
+            "implementing_regulation:4(1)(c)"
+          ]
+        }
+      ],
+      "review_required": true,
+      "notes": "بيان الأساس النظامي المناسب",
+      "source_mappings": [
+        "R03"
+      ],
+      "aggregation": "single_combined_assessment",
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N08",
+      "title_ar": "تمييز البيانات الإلزامية والاختيارية",
+      "title_en": "Mandatory versus optional data",
+      "assessment_type": "notice",
+      "applicability": "direct_collection",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "pdpl:13",
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:13",
+          "english_excerpt": "When collecting Personal Data directly from the Data Subject, the Controller shall take appropriate measures to inform the Data Subject of the following upon Collection: 1- The legal basis for collecting their ",
+          "arabic_excerpt": "على جهة التحكم، في حالة جمع البيانات الشخصية من صاحبها مباشرةً، اتخاذ الوسائل الكافية لإحاطته علماً بالعناصر الآتية عند البدء في جمع بياناته: 1- المسوغ النظامي لجمع بياناته الشخصية. 2- الغرض من جمع بياناته الشخ",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N08-01",
+          "question_ar": "توضيح ما إذا كان جمع البيانات الشخصية أو معالجتها إلزاميًا أو اختياريًا",
+          "source_ref": "pdpl:13",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null,
+          "additional_source_refs": [
+            "implementing_regulation:4(1)(g)"
+          ]
+        }
+      ],
+      "review_required": true,
+      "notes": "تحديد ما يلزم تقديمه وما هو اختياري",
+      "source_mappings": [
+        "R04"
+      ],
+      "aggregation": "single_combined_assessment",
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N09",
+      "title_ar": "آثار أو مخاطر عدم تقديم البيانات",
+      "title_en": "Consequences of non-provision",
+      "assessment_type": "notice",
+      "applicability": "direct_collection",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "pdpl:13"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:13",
+          "english_excerpt": "When collecting Personal Data directly from the Data Subject, the Controller shall take appropriate measures to inform the Data Subject of the following upon Collection: 1- The legal basis for collecting their ",
+          "arabic_excerpt": "على جهة التحكم، في حالة جمع البيانات الشخصية من صاحبها مباشرةً، اتخاذ الوسائل الكافية لإحاطته علماً بالعناصر الآتية عند البدء في جمع بياناته: 1- المسوغ النظامي لجمع بياناته الشخصية. 2- الغرض من جمع بياناته الشخ",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N09-01",
+          "question_ar": "بيان الآثار أو المخاطر المحتملة لعدم إتمام جمع البيانات",
+          "source_ref": "pdpl:13",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        }
+      ],
+      "review_required": true,
+      "notes": "شرح آثار عدم تقديم البيانات بحسب السياق",
+      "source_mappings": [
+        "R04"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N10",
+      "title_ar": "الجهات التي يفصح لها عن البيانات وصفاتها",
+      "title_en": "Recipients and roles",
+      "assessment_type": "notice",
+      "applicability": "direct_collection",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "pdpl:13"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:13",
+          "english_excerpt": "When collecting Personal Data directly from the Data Subject, the Controller shall take appropriate measures to inform the Data Subject of the following upon Collection: 1- The legal basis for collecting their ",
+          "arabic_excerpt": "على جهة التحكم، في حالة جمع البيانات الشخصية من صاحبها مباشرةً، اتخاذ الوسائل الكافية لإحاطته علماً بالعناصر الآتية عند البدء في جمع بياناته: 1- المسوغ النظامي لجمع بياناته الشخصية. 2- الغرض من جمع بياناته الشخ",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N10-01",
+          "question_ar": "تحديد الجهات التي سيفصح لها عن البيانات",
+          "source_ref": "pdpl:13",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        },
+        {
+          "id": "N10-02",
+          "question_ar": "بيان صفة الجهات المستقبلة للبيانات",
+          "source_ref": "pdpl:13",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        }
+      ],
+      "review_required": true,
+      "notes": "الجهات المستقبلة للبيانات وصفاتها",
+      "source_mappings": [
+        "R09"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N11",
+      "title_ar": "الإفصاح عن النقل أو المعالجة خارج المملكة",
+      "title_en": "Cross-border processing notice",
+      "assessment_type": "notice",
+      "applicability": "direct_collection",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "pdpl:13"
+      ],
+      "legal_sources": [
+        {
+          "ref": "pdpl:13",
+          "english_excerpt": "When collecting Personal Data directly from the Data Subject, the Controller shall take appropriate measures to inform the Data Subject of the following upon Collection: 1- The legal basis for collecting their ",
+          "arabic_excerpt": "على جهة التحكم، في حالة جمع البيانات الشخصية من صاحبها مباشرةً، اتخاذ الوسائل الكافية لإحاطته علماً بالعناصر الآتية عند البدء في جمع بياناته: 1- المسوغ النظامي لجمع بياناته الشخصية. 2- الغرض من جمع بياناته الشخ",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N11-01",
+          "question_ar": "بيان ما إذا كانت البيانات ستنقل أو يفصح عنها أو تعالج خارج المملكة",
+          "source_ref": "pdpl:13",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        }
+      ],
+      "review_required": true,
+      "notes": "ذكر ما إذا كانت البيانات ستنقل أو تعالج خارج المملكة",
+      "source_mappings": [
+        "R10"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N12",
+      "title_ar": "مدة الاحتفاظ أو معايير تحديدها",
+      "title_en": "Retention period or criteria",
+      "assessment_type": "notice",
+      "applicability": "direct_collection",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N12-01",
+          "question_ar": "تحديد مدة الاحتفاظ بالبيانات الشخصية",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        },
+        {
+          "id": "N12-02",
+          "question_ar": "أو توضيح معايير حساب المدة إذا تعذر تحديدها مسبقًا",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        }
+      ],
+      "review_required": true,
+      "notes": "يكفي بيان مدة الاحتفاظ، أو معايير تحديدها إذا تعذر تحديد المدة؛ لا تُحسب البدائل فجوتين.",
+      "source_mappings": [
+        "R13"
+      ],
+      "aggregation_rule": "any_of",
+      "aggregation_check_ids": [
+        "N12-01",
+        "N12-02"
+      ],
+      "aggregation": "any_of_conditional",
+      "aggregation_rule_ar": "يكفي تحديد مدة الاحتفاظ، أو بيان معايير تحديدها إذا تعذر تحديد المدة؛ لا تُحتسب فجوتان.",
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N13",
+      "title_ar": "كيفية العدول عن الموافقة",
+      "title_en": "How to withdraw consent",
+      "assessment_type": "notice",
+      "applicability": "consent_based",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N13-01",
+          "question_ar": "شرح كيفية العدول عن الموافقة على معالجة البيانات",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        }
+      ],
+      "review_required": true,
+      "notes": "شرح طريقة العدول عن الموافقة",
+      "source_mappings": [
+        "R07"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N14",
+      "title_ar": "بيانات التواصل مع مسؤول حماية البيانات عند انطباقه",
+      "title_en": "DPO contact details",
+      "assessment_type": "notice",
+      "applicability": "dpo_applicable",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N14-01",
+          "question_ar": "بيانات الاتصال بمسؤول حماية البيانات المعين إن وجد",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        }
+      ],
+      "review_required": true,
+      "notes": "قناة التواصل مع المسؤول المعين",
+      "source_mappings": [
+        "R18"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N15",
+      "title_ar": "مصدر البيانات إذا جُمعت من غير صاحبها",
+      "title_en": "Indirect collection source",
+      "assessment_type": "notice",
+      "applicability": "indirect_collection",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N15-01",
+          "question_ar": "بيان فئات البيانات المعالجة عند الجمع غير المباشر",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        },
+        {
+          "id": "N15-02",
+          "question_ar": "بيان المصدر الذي حصلت منه جهة التحكم على البيانات",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null
+        },
+        {
+          "id": "N15-03",
+          "question_ar": "التحقق خارجيًا من إبلاغ صاحب البيانات دون تأخر غير مبرر وخلال مدة لا تتجاوز 30 يومًا عند الجمع غير المباشر، مع مراعاة استثناءات المادة 4(4)",
+          "source_ref": "implementing_regulation:4(3)-(4)",
+          "verification_mode": "external",
+          "result": null,
+          "evidence": null,
+          "text_only_default_result": "needs_review",
+          "external_evidence_required": true,
+          "default_policy_text_result": "needs_review"
+        }
+      ],
+      "review_required": true,
+      "notes": "الـ30 يوم مهلة لتقديم الإشعار وليست عبارة واجبة الإدراج في سياسة الخصوصية.",
+      "source_mappings": [
+        "R05"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N16",
+      "title_ar": "إشعار صاحب البيانات قبل المعالجة لغرض إضافي",
+      "title_en": "Notice before new purpose",
+      "assessment_type": "notice",
+      "applicability": "new_purpose",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N16-01",
+          "question_ar": "إبلاغ صاحب البيانات بالمعلومات اللازمة قبل المعالجة الإضافية لغرض مختلف",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "external",
+          "result": null,
+          "evidence": null,
+          "text_only_default_result": "needs_review",
+          "external_evidence_required": true,
+          "default_policy_text_result": "needs_review"
+        }
+      ],
+      "review_required": true,
+      "notes": "الإشعار قبل بدء معالجة إضافية",
+      "source_mappings": [
+        "R08"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N17",
+      "title_ar": "معلومات إضافية بشأن المعالجة ذات المخاطر أو النطاق الخاص",
+      "title_en": "Enhanced transparency",
+      "assessment_type": "notice",
+      "applicability": "enhanced_notice_article_4_5",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "implementing_regulation:4"
+      ],
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:4",
+          "english_excerpt": "1- If the Personal Data is collected directly from the Data Subject, the Controller shall, before or when collecting the Data, take the necessary measures to inform the Data Subject of the following: a) Control",
+          "arabic_excerpt": "1- في حال تم جمع البيانات الشخصية من صاحبها مباشرة، يجب على جهة التحكم قبل أو عند جمع البيانات اتخاذ التدابير اللازمة لإبلاغ صاحب البيانات الشخصية بالآتي: أ- الاسم النظامي لجهة التحكم، وبيانات التواصل الخاصة به",
+          "found_both": true
+        }
+      ],
+      "source_validation_status": "article_exists_both_languages_not_paragraph_verified",
+      "checks": [
+        {
+          "id": "N17-01",
+          "question_ar": "توضيح وسائل وطرق جمع ومعالجة البيانات الحساسة عند انطباق ذلك",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null,
+          "condition": "enhanced_notice_trigger AND sensitive_data_processed"
+        },
+        {
+          "id": "N17-02",
+          "question_ar": "توضيح الوسائل والإجراءات المتخذة لحماية البيانات الشخصية",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null,
+          "condition": "enhanced_notice_trigger"
+        },
+        {
+          "id": "N17-03",
+          "question_ar": "بيان ما إذا كانت القرارات ستُتخذ اعتمادًا بالكامل على المعالجة الآلية",
+          "source_ref": "implementing_regulation:4",
+          "verification_mode": "text",
+          "result": null,
+          "evidence": null,
+          "condition": "enhanced_notice_trigger"
+        }
+      ],
+      "review_required": true,
+      "notes": "هذه إفصاحات مشروطة، وليست متطلبات عامة على كل السياسات.",
+      "source_mappings": [
+        "R15"
+      ],
+      "applicability_rule_ar": "ينطبق عند المعالجة واسعة النطاق أو المتكررة لبيانات ناقصي الأهلية أو المجهولي الأبوين، أو المراقبة المستمرة، أو التقنيات الناشئة، أو اتخاذ قرارات مبنية على المعالجة الآلية؛ حسب المادة 4(5).",
+      "aggregation": "conditional_group",
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    },
+    {
+      "id": "N18",
+      "title_ar": "إشعارات خاصة بناقصي الأهلية عند انطباقها",
+      "title_en": "Additional notices for persons lacking legal capacity",
+      "assessment_type": "notice",
+      "applicability": "lacks_capacity",
+      "policy_text_assessment": "conditional_text_check",
+      "legal_refs": [
+        "implementing_regulation:4(7)"
+      ],
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:4(7)",
+          "source": "official_implementing_regulation",
+          "verification_status": "verified_article_subsection"
+        }
+      ],
+      "source_validation_status": "draft_requires_legal_review",
+      "checks": [
+        {
+          "id": "N18-01",
+          "question_ar": "صياغة الإشعار بلغة مناسبة لصاحب البيانات ناقص الأهلية",
+          "source_ref": "implementing_regulation:4(7)",
+          "verification_mode": "external_or_text_with_context",
+          "condition": "when the controller is aware the data subject lacks full or partial legal capacity",
+          "result": null,
+          "evidence": null,
+          "default_policy_text_result": "needs_review"
+        }
+      ],
+      "review_required": true,
+      "notes": "المطلوب لغة مناسبة عند علم جهة التحكم بنقص الأهلية؛ لا يُحكم من السياسة العامة وحدها على العلم أو جودة الإشعار المقدم. أزيل N18-02 لأنه يعيد شرط المادة 4(5) المدرج في N17.",
+      "source_mappings": [
+        "R20"
+      ],
+      "assessment_boundary": "policy_text_only",
+      "legal_interpretation_review": "team_or_qualified_legal_reviewer_before_production"
+    }
+  ],
+  "contextual_duties_and_suggestions_not_scored": [
+    {
+      "id": "D01",
+      "title_ar": "تقييد المعالجة بالموافقة أو باستثناء نظامي",
+      "type": "duty",
+      "applicability": "processing",
+      "legal_sources": [
+        {
+          "ref": "pdpl:5",
+          "english_excerpt": "1-Except for the cases stated in this Law, neither Personal Data may be processed nor the purpose of Personal Data Processing may be changed without the consent of the Data Subject. The Regulations Shall set ou",
+          "arabic_excerpt": "1- فيما عدا الأحوال المنصوص عليها في النظام، لا تجوز معالجة البيانات الشخصية أو تغيير الغرض من معالجتها إلاّ بعد موافقة صاحبها. وتُبين اللوائح شروط الموافقة، والأحوال التي يجب فيها أن تكون الموافقة صريحة، والشر",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D02",
+      "title_ar": "عدم اشتراط موافقة غير مرتبطة بالخدمة",
+      "type": "duty",
+      "applicability": "consent_based",
+      "legal_sources": [
+        {
+          "ref": "pdpl:7",
+          "english_excerpt": "The consent referred to in paragraph (1) of Article (5) of this Law may not form a condition of providing a service or a benefit, unless such service or benefit is directly related to the Processing of Personal",
+          "arabic_excerpt": "لا يجوز أن تكون الموافقة المشار إليها في الفقرة (1) من المادة (الخامسة) من النظام شرطاً لإسداء خدمة أو تقديم منفعة، ما لم تكن الخدمة أو المنفعة ذات علاقة بمعالجة البيانات الشخصية التي صدرت الموافقة عليها.",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D03",
+      "title_ar": "تقليل البيانات وتحديد الغرض",
+      "type": "duty",
+      "applicability": "processing",
+      "legal_sources": [
+        {
+          "ref": "pdpl:11",
+          "english_excerpt": "1- The purpose for which Personal Data is collected shall be directly related to the Controller’s purposes, and shall not contravene any legal provisions. 2- The methods and means of Personal Data Collection sh",
+          "arabic_excerpt": "1- يجب أن يكون الغرض من جمع البيانات الشخصية ذا علاقة مُباشرة بأغراض جهة التحكم، وألاّ يتعارض مع أي حكم مقرر نظاماً. 2- يجب ألاّ تتعارض طُرق جمع البيانات الشخصية ووسائلها مع أي حكم مقرر نظاماً، وأن تكون ملائمة ",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:19",
+          "english_excerpt": "1- The Controller shall collect only the minimum amount of Personal Data necessary to achieve the purpose of the Processing, and ensure the following: a) Collecting only the necessary Personal Data that is dire",
+          "arabic_excerpt": "1- على جهة التحكم جمع الحد الأدنى اللازم من البيانات الشخصية لتحقيق الغرض من المعالجة، وضمان ما يلي: أ- جمع البيانات الشخصية الضرورية والمرتبطة ارتباطا وثيقا ومباشرا بالغرض من معالجة البيانات، ويتم تحديد ذلك من",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D04",
+      "title_ar": "ضوابط الموافقة وتوثيقها",
+      "type": "duty",
+      "applicability": "consent_based",
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:11",
+          "english_excerpt": "1- The Controller shall obtain Data Subject's consent to Process their Data in any appropriate form or means, including written or verbal consent or electronic means, subject to the following conditions: a) Con",
+          "arabic_excerpt": "1- لجهة التحكم الحصول على موافقة صاحب البيانات الشخصية على معالجة بياناته بأي شكل أو وسيلة ملائمة، بما في ذلك الموافقات الكتابية أو الشفوية أو باستخدام الطرق الإلكترونية، على أن يشترط في الموافقة ما يأتي: أ- أن",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D05",
+      "title_ar": "تمكين العدول عن الموافقة",
+      "type": "duty",
+      "applicability": "consent_based",
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:12",
+          "english_excerpt": "1- A Data Subject shall have the right to withdraw their consent for Processing their Personal Data at any time, and they shall inform the Controller of this through any available mean in accordance with Articl",
+          "arabic_excerpt": "1- لصاحب البيانات الشخصية العدول عن موافقته على معالجة بياناته الشخصية في أي وقت، وله إبلاغ جهة التحكم بذلك بأي من الوسائل المتاحة وفقا للمادة (الرابعة) من هذه اللائحة. 2- قبل طلب الموافقة من صاحب البيانات الشخ",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D06",
+      "title_ar": "تمكين الوصول والتصحيح والحصول على نسخة والإتلاف",
+      "type": "duty",
+      "applicability": "processing",
+      "legal_sources": [
+        {
+          "ref": "pdpl:4",
+          "english_excerpt": "Data Subject shall have the following rights pursuant to this Law and as set out in the Regulations: 1-The right to be informed about the legal basis and the purpose of the Collection of their Personal Data. 2-",
+          "arabic_excerpt": "يكون لصاحب البيانات الشخصية -وفقاً للأحكام الواردة في النظام وما تحدده اللوائح- الحقوق الآتية: 1- الحق في العلم، ويشمل ذلك إحاطته علماً بالمسوغ النظامي لجمع بياناته الشخصية والغرض من جمعها. 2- الحق في وصوله إلى",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:7",
+          "english_excerpt": "1- Data Subject shall have the right to obtain from the Controller a restriction of Processing when the accuracy of the Personal Data is contested by the Data Subject, for a period enabling the Controller to ve",
+          "arabic_excerpt": "1- يجوز لصاحب البيانات الشخصية في حال عدم صحة بياناته الشخصية المتوافرة لدى جهة التحكم أن يطلب تقييد معالجة بياناته لمدة يمكن لجهة التحكم خلالها التحقق من صحة البيانات الشخصية، مع مراعاة عدم سريان حق صاحب البيا",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D07",
+      "title_ar": "الاستجابة لطلبات الحقوق ضمن المدة النظامية",
+      "type": "duty",
+      "applicability": "rights_request",
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:3",
+          "english_excerpt": "1- The Controller shall, upon receiving a request from the Data Subject regarding their rights as stipulated in the Law, do the following: a) Act on the request of the Data Subject for exercising their rights u",
+          "arabic_excerpt": "1- على جهة التحكم عند تلقيها طلبا من صاحب البيانات الشخصية يتعلق بحقوقه المنصوص عليها في النظام القيام بما يلي: أ- تنفيذ طلبات ممارسة الحقوق المنصوص عليها في النظام خلال مدة لا تتجاوز (ثلاثين) يوما دون تأخير، و",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:10",
+          "english_excerpt": "The Controller is required to provide appropriate means to process requests related to Data Subject rights as stipulated in the Law. The Data Subject shall have the choice to use one or many among the following",
+          "arabic_excerpt": "على جهة التحكم توفير الوسائل الملائمة للاستجابة لطلبات صاحب البيانات الشخصية المتعلقة بحقوقه المنصوص عليها في النظام، ويكون لصاحب البيانات الشخصية استخدام واحدة أو أكثر من الوسائل الآتية حسب اختياره وتوافرها لد",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D08",
+      "title_ar": "الإتلاف عند زوال الغرض مع الاستثناءات",
+      "type": "duty",
+      "applicability": "processing",
+      "legal_sources": [
+        {
+          "ref": "pdpl:18",
+          "english_excerpt": "1- The Controller shall, without undue delay, Destroy the Personal Data when no longer necessary for the purpose for which they were collected. However, the Controller may retain data after the purpose of the C",
+          "arabic_excerpt": "1- على جهة التحكم إتلاف البيانات الشخصية بعد انتهاء الغرض من جمعها دون تأخير. ومع ذلك، يجوز لها الاحتفاظ بتلك البيانات بعد انتهاء الغرض من جمعها إذا تمت إزالة كل ما يؤدي إلى معرفة صاحبها على وجه التحديد وفق الض",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:8",
+          "english_excerpt": "1- The Controller shall destroy Personal Data in any of the following cases: a) Upon Data Subject's request. b) If the Personal Data are no longer necessary to achieve the purpose for which they were collected.",
+          "arabic_excerpt": "1- على جهة التحكم إتلاف البيانات الشخصية في أي من الأحوال الآتية: أ- تنفيذا لطلب صاحب البيانات الشخصية. ب- إذا لم تعد البيانات الشخصية ضرورية لتحقيق الغرض الذي جمعت من أجله. ج- إذا عدل صاحب البيانات الشخصية عن ",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D09",
+      "title_ar": "ضوابط الإفصاح للأطراف الثالثة",
+      "type": "duty",
+      "applicability": "disclosure",
+      "legal_sources": [
+        {
+          "ref": "pdpl:15",
+          "english_excerpt": "The Controller may not Disclose Personal Data except in the following situations: 1- Data Subject consents to the Disclosure in accordance with the provisions of the Law. 2- Personal Data has been collected fro",
+          "arabic_excerpt": "لا يجوز لجهة التحكم الإفصاح عن البيانات الشخصية إلا في الأحوال الآتية: 1- إذا وافق صاحب البيانات الشخصية على الإفصاح وفقاً لأحكام النظام. 2- إذا كانت البيانات الشخصية قد جرى جمعها من مصدر متاح للعموم. 3- إذا كا",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D10",
+      "title_ar": "اتفاقيات وضمانات جهات المعالجة",
+      "type": "duty",
+      "applicability": "uses_processor",
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:17",
+          "english_excerpt": "1- The Controller shall ensure that any Processor selected provides sufficient guarantees to protect Personal Data, and that the agreement with the Processor includes the following: a) Purpose of the Processing",
+          "arabic_excerpt": "1- على جهة التحكم عند اختيار جهة المعالجة الالتزام باختيار جهة معالجة تقدم ضمانات كافية لحماية البيانات الشخصية، وأن يتضمن الاتفاق مع جهة المعالجة ما يلي: أ- غرض المعالجة. ب- فئات البيانات الشخصية المعالجة. ج- ",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D11",
+      "title_ar": "التدابير التنظيمية والتقنية لحماية البيانات",
+      "type": "duty",
+      "applicability": "processing",
+      "legal_sources": [
+        {
+          "ref": "pdpl:19",
+          "english_excerpt": "The Controller shall implement all the necessary organizational, administrative and technical measures to protect Personal Data, including during the Transfer of Personal Data, in accordance with the provisions",
+          "arabic_excerpt": "على جهة التحكم اتخاذ ما يلزم من إجراءات ووسائل تنظيمية وإدارية وتقنية تضمن المحافظة على البيانات الشخصية، بما في ذلك عند نقلها؛ وذلك وفقاً للأحكام والضوابط التي تحددها اللوائح.",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:23",
+          "english_excerpt": "The Controller shall take the necessary organizational, administrative, and technical measures to ensure Personal Data security and Data Subjects privacy, and shall comply with the following: a) Implement neces",
+          "arabic_excerpt": "على جهة التحكم اتخاذ التدابير التنظيمية والإدارية والتقنية اللازمة لضمان أمن البيانات الشخصية وخصوصية أصحابها، والالتزام بالآتي: 1. تطبيق التدابير الأمنية والتقنية الضرورية للحد من المخاطر الأمنية لحدوث تسرب ال",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D12",
+      "title_ar": "إشعارات خرق البيانات للجهات المعنية",
+      "type": "duty",
+      "applicability": "breach",
+      "legal_sources": [
+        {
+          "ref": "pdpl:20",
+          "english_excerpt": "1- The Controller shall notify the Competent Authority upon knowing of any breach, damage, or illegal access to personal data, in accordance with the Regulations. 2- The Controller shall notify the Data Subject",
+          "arabic_excerpt": "1- تشعر جهة التحكم الجهة المختصة عند علمها بحدوث تسرب لبيانات شخصية أو تلفها أو وصول غير مشروع إليها؛ وفقاً لما تحدده اللوائح. 2- تشعر جهة التحكم صاحب البيانات الشخصية إذا كان من شأن حدوث تسرب لبيانات شخصية أو ",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:24",
+          "english_excerpt": "1- The Controller shall notify the Competent Authority within a delay not exceeding (72) hours of becoming aware of the incident, if such incident potentially causes harm to the Personal Data, or to Data Subjec",
+          "arabic_excerpt": "1- تشعر جهة التحكم الجهة المختصة في حالة وقوع حادثة تسرب للبيانات الشخصية خلال مدة لا تتجاوز (72) ساعة من وقت علمها بالحادثة، إذا كان من شأن تلك الحادثة الإضرار بالبيانات الشخصية أو صاحب البيانات الشخصية أو كان",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D13",
+      "title_ar": "ضوابط الرسائل التسويقية",
+      "type": "duty",
+      "applicability": "marketing",
+      "legal_sources": [
+        {
+          "ref": "pdpl:25",
+          "english_excerpt": "With the exception of the awareness-raising materials sent by Public Entities, Controller may not use personal means of communication, including the post and email, of the Data Subject to send advertising or aw",
+          "arabic_excerpt": "فيما عدا المواد التوعوية التي ترسلها الجهات العامة، لا يجوز لجهة التحكم استخدام وسائل الاتصال الشخصية -بما فيها العناوين البريدية والإلكترونية- الخاصة بصاحب البيانات الشخصية لأجل إرسال مواد دعائية أو توعوية، إل",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:28",
+          "english_excerpt": "Purposes 1- Controller shall obtain Consent from a targeted recipient before sending advertising or awareness material in case of the absence of a prior interaction between the Controller and the targeted recip",
+          "arabic_excerpt": "1- على جهة التحكم قبل إرسال مواد دعائية أو توعوية الحصول على موافقة المتلقي المستهدف، وذلك في حال عدم وجود تعامل مسبق بين جهة التحكم والمتلقي المستهدف. 2- تكون شروط موافقة المتلقي المستهدف بالمواد الدعائية أو ا",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D14",
+      "title_ar": "ضوابط النقل الدولي والضمانات",
+      "type": "duty",
+      "applicability": "cross_border_transfer",
+      "legal_sources": [
+        {
+          "ref": "pdpl:29",
+          "english_excerpt": "1-Subject to the provisions of Paragraph (2) of this Article, a Controller may Transfer Personal Data outside the Kingdom or disclose it to a party outside the Kingdom, in order to achieve any of the following ",
+          "arabic_excerpt": "1- مع مراعاة ما ورد في الفقرة (2) من هذه المادة، يجوز لجهة التحكم نقل البيانات الشخصية إلى خارج المملكة أو الإفصاح عنها لجهة خارج المملكة، وذلك لتحقيق أيٍّ من الأغراض الآتية: أ- إذا كان ذلك تنفيذاً لالتزام بموج",
+          "found_both": true
+        },
+        {
+          "ref": "transfer_regulation:4",
+          "english_excerpt": "1. In accordance with the cases of exemption specified in paragraph (2) of this Article, the controller shall implement the following appropriate safeguards: A. Standard contractual clauses. B. Binding common r",
+          "arabic_excerpt": "1. وفقاً لحالات الإعفاء المنصوص عليها في الفقرة (2) من هذه المادة، تقوم جهة التحكم باستخدام الضمانات المناسبة الآتية: أ. البنود التعاقدية القياسية. ب. القواعد المشتركة الملزمة. ج. شهادة الاعتماد. 2. تعفى جهة ال",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D15",
+      "title_ar": "تقييم مخاطر النقل الدولي في الحالات المحددة",
+      "type": "duty",
+      "applicability": "transfer_risk_assessment_trigger",
+      "legal_sources": [
+        {
+          "ref": "transfer_regulation:7",
+          "english_excerpt": "１. The controller shall conduct a risk assessment before transferring or disclosing personal data to a party outside the Kingdom in the following cases: A. Transfer or disclosure of personal data to a party out",
+          "arabic_excerpt": "1. على جهة التحكم إجراء تقويم مخاطر قبل نقل البيانات الشخصية أو الإفصاح عنها لجهة خارج المملكة، وذلك في الأحوال الآتية: أ. نقل البيانات الشخصية أو الإفصاح عنها لجهة خارج المملكة وفقاً للمادة (الرابعة) من اللائح",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D16",
+      "title_ar": "حماية حقوق ناقصي الأهلية وموافقة الولي",
+      "type": "duty",
+      "applicability": "lacks_capacity",
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:13",
+          "english_excerpt": "1- Considering applicable legal requirements, the legal guardian of a Data Subject that lacks full or partial legal capacity shall act in the best interests of the Data Subject and for this purpose, they have t",
+          "arabic_excerpt": "1- مع مراعاة المتطلبات النظامية ذوات العلاقة، على الولي الشرعي لصاحب البيانات الشخصية ناقص أو عديم الأهلية أن يتصرف بما يحقق مصلحة صاحب البيانات الشخصية، وله في سبيل ذلك ما يلي: أ- ممارسة الحقوق المقررة لصاحب ا",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D17",
+      "title_ar": "تعيين مسؤول حماية بيانات عند تحقق الحالات",
+      "type": "duty",
+      "applicability": "dpo_applicable",
+      "legal_sources": [
+        {
+          "ref": "implementing_regulation:32",
+          "english_excerpt": "1- The Controller shall appoint one or more individuals to be responsible for the protection of Personal Data in any of the following cases: a) The Controller is a Public Entity that provides services involving",
+          "arabic_excerpt": "1- تقوم جهة التحكم بتعيين أو تحديد شخص أو أكثر ليكون مسؤولا عن حماية البيانات الشخصية، وذلك في أي من الحالات الآتية: أ- أن تكون جهة التحكم جهة عامة تقدم خدمات تتضمن معالجة بيانات شخصية على نطاق واسع. ب- أن تقوم",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "D18",
+      "title_ar": "حق تقديم الشكوى للجهة المختصة",
+      "type": "right",
+      "applicability": "all",
+      "legal_sources": [
+        {
+          "ref": "pdpl:34",
+          "english_excerpt": "A Data Subject may submit to the Competent Authority any complaint that may arise out of the implementation of this Law and the Regulations. The Regulations shall set out the rules for processing the complaints",
+          "arabic_excerpt": "يجوز لصاحب البيانات الشخصية التقدم إلى الجهة المختصة بأي شكوى ناشئة من تطبيق النظام واللوائح. وتحدد اللوائح ضوابط معالجة الجهة المختصة للشكاوى التي يقدمها صاحب البيانات الشخصية الناشئة من تطبيق النظام واللوائح.",
+          "found_both": true
+        },
+        {
+          "ref": "implementing_regulation:37",
+          "english_excerpt": "1- A Data Subject may submit a complaint to the Competent Authority within a period not exceeding (90) days from the date when the incident occurred or when the Data Subject became aware of it. The Competent Au",
+          "arabic_excerpt": "1- لصاحب البيانات الشخصية تقديم شكوى إلى الجهة المختصة خلال مدة لا تتجاوز (90) يوما من تاريخ الحادثة محل الشكوى أو علم صاحب البيانات الشخصية بها، وللجهة المختصة تقدير قبول الشكوى من عدمه بعد تجاوز هذه المدة في ",
+          "found_both": true
+        }
+      ],
+      "policy_evaluation": "context_only_not_a_policy_gap",
+      "reason": "غياب هذا الالتزام أو الحق من نص سياسة الخصوصية وحده لا يثبت مخالفة أو نقصًا إلزاميًا في السياسة."
+    },
+    {
+      "id": "R09-suggestion-5",
+      "title_ar": "الإفصاح للأطراف الثالثة وجهات المعالجة",
+      "type": "inferred",
+      "applicability": "contextual",
+      "legal_sources": [],
+      "policy_evaluation": "optional_suggestion_only",
+      "reason": "اقتراح غير مستند إلى نص إلزامي مباشر وفق تصنيف المصدر."
+    },
+    {
+      "id": "R10-suggestion-4",
+      "title_ar": "نقل البيانات إلى خارج المملكة أو الإفصاح عنها لجهة خارجها",
+      "type": "inferred",
+      "applicability": "contextual",
+      "legal_sources": [],
+      "policy_evaluation": "optional_suggestion_only",
+      "reason": "اقتراح غير مستند إلى نص إلزامي مباشر وفق تصنيف المصدر."
+    }
+  ],
+  "revision_notes": [
+    "N05: removed duplicated rights-exercise mechanism subcheck N05-03; retained both references.",
+    "N12: explicitly set any_of aggregation between retention period and criteria.",
+    "N17: removed N17-04 overlapping N18 capacity-related notice; retained N18 checks.",
+    "N01/N15/N16: external checks default to needs_review for policy-text-only evaluation.",
+    "No legal source citations or interpretation independently validated in this revision.",
+    "Final editable v1: N02, N07 and N08 consolidated to avoid double-counting; retained original IDs of first checks.",
+    "N18-02 removed as overlap with enhanced transparency under N17; N18 focuses on language-appropriate notice under Article 4(7).",
+    "N15 external 30-day notification is not a mandatory sentence in a public privacy policy.",
+    "Official article-level sources checked for PDPL Articles 12-13 and Implementing Regulation Article 4; all applicability and legal conclusions still subject to qualified review."
+  ],
+  "authoritative_reference_urls": {
+    "pdpl": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PDPL/",
+    "implementing_regulation": "https://www.uqn.gov.sa/details?p=23595"
+  }
+}

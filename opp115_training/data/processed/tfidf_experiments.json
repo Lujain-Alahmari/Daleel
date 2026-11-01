@@ -1,0 +1,116 @@
+[
+  {
+    "configuration": "char_3_5",
+    "class_weight": "balanced",
+    "micro_f1": 0.7459415584415584,
+    "macro_f1": 0.770529222568104,
+    "hamming_loss": 0.08493894165535956,
+    "thresholds": {
+      "Data Retention": 0.6,
+      "Data Security": 0.7,
+      "Do Not Track": 0.35,
+      "First Party Collection/Use": 0.5,
+      "International and Specific Audiences": 0.45,
+      "Other": 0.5,
+      "Policy Change": 0.7,
+      "Third Party Sharing/Collection": 0.5,
+      "User Access, Edit and Deletion": 0.5,
+      "User Choice/Control": 0.5
+    }
+  },
+  {
+    "configuration": "word_1_2",
+    "class_weight": "balanced",
+    "micro_f1": 0.751672569854388,
+    "macro_f1": 0.7618905161869883,
+    "hamming_loss": 0.08561736770691994,
+    "thresholds": {
+      "Data Retention": 0.45,
+      "Data Security": 0.6,
+      "Do Not Track": 0.3,
+      "First Party Collection/Use": 0.5,
+      "International and Specific Audiences": 0.5,
+      "Other": 0.45,
+      "Policy Change": 0.7,
+      "Third Party Sharing/Collection": 0.45,
+      "User Access, Edit and Deletion": 0.45,
+      "User Choice/Control": 0.5
+    }
+  },
+  {
+    "configuration": "word_1_3",
+    "class_weight": "balanced",
+    "micro_f1": 0.7493112947658402,
+    "macro_f1": 0.7555827459012957,
+    "hamming_loss": 0.0864314789687924,
+    "thresholds": {
+      "Data Retention": 0.45,
+      "Data Security": 0.6,
+      "Do Not Track": 0.35,
+      "First Party Collection/Use": 0.5,
+      "International and Specific Audiences": 0.45,
+      "Other": 0.45,
+      "Policy Change": 0.6,
+      "Third Party Sharing/Collection": 0.45,
+      "User Access, Edit and Deletion": 0.45,
+      "User Choice/Control": 0.5
+    }
+  },
+  {
+    "configuration": "char_3_5",
+    "class_weight": "none",
+    "micro_f1": 0.7448330683624801,
+    "macro_f1": 0.7438255115383873,
+    "hamming_loss": 0.08710990502035278,
+    "thresholds": {
+      "Data Retention": 0.15,
+      "Data Security": 0.25,
+      "Do Not Track": 0.1,
+      "First Party Collection/Use": 0.4,
+      "International and Specific Audiences": 0.15,
+      "Other": 0.45,
+      "Policy Change": 0.15,
+      "Third Party Sharing/Collection": 0.3,
+      "User Access, Edit and Deletion": 0.1,
+      "User Choice/Control": 0.25
+    }
+  },
+  {
+    "configuration": "word_1_2",
+    "class_weight": "none",
+    "micro_f1": 0.7493198600855033,
+    "macro_f1": 0.7391710956520716,
+    "hamming_loss": 0.08751696065128901,
+    "thresholds": {
+      "Data Retention": 0.1,
+      "Data Security": 0.2,
+      "Do Not Track": 0.1,
+      "First Party Collection/Use": 0.4,
+      "International and Specific Audiences": 0.15,
+      "Other": 0.4,
+      "Policy Change": 0.2,
+      "Third Party Sharing/Collection": 0.3,
+      "User Access, Edit and Deletion": 0.1,
+      "User Choice/Control": 0.25
+    }
+  },
+  {
+    "configuration": "word_1_3",
+    "class_weight": "none",
+    "micro_f1": 0.7486548808608763,
+    "macro_f1": 0.7255046883207615,
+    "hamming_loss": 0.0887381275440977,
+    "thresholds": {
+      "Data Retention": 0.1,
+      "Data Security": 0.15,
+      "Do Not Track": 0.1,
+      "First Party Collection/Use": 0.4,
+      "International and Specific Audiences": 0.15,
+      "Other": 0.4,
+      "Policy Change": 0.2,
+      "Third Party Sharing/Collection": 0.3,
+      "User Access, Edit and Deletion": 0.1,
+      "User Choice/Control": 0.25
+    }
+  }
+]

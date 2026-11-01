@@ -1,0 +1,128 @@
+{
+  "policies": 10,
+  "reference_judgments": 180,
+  "text_judgments_scored": 125,
+  "unresolved_or_out_of_scope_reference_judgments": 55,
+  "text_status_accuracy_primary": 0.608,
+  "text_macro_f1_supported_classes": 0.5756742730177266,
+  "text_per_class": {
+    "covered": {
+      "support": 84,
+      "precision": 0.8472222222222222,
+      "recall": 0.7261904761904762,
+      "f1": 0.782051282051282
+    },
+    "missing": {
+      "support": 12,
+      "precision": 0.5789473684210527,
+      "recall": 0.9166666666666666,
+      "f1": 0.7096774193548387
+    },
+    "partially_covered": {
+      "support": 29,
+      "precision": 0.8,
+      "recall": 0.13793103448275862,
+      "f1": 0.23529411764705882
+    }
+  },
+  "all_status_agreement_secondary": 0.5,
+  "invalid_or_missing_outputs": 32,
+  "minimum_ten_policies_met": true,
+  "all_status_confusion": [
+    {
+      "gold": "covered",
+      "predicted": "covered",
+      "count": 61
+    },
+    {
+      "gold": "covered",
+      "predicted": "error",
+      "count": 22
+    },
+    {
+      "gold": "covered",
+      "predicted": "partially_covered",
+      "count": 1
+    },
+    {
+      "gold": "missing",
+      "predicted": "missing",
+      "count": 11
+    },
+    {
+      "gold": "missing",
+      "predicted": "needs_review",
+      "count": 1
+    },
+    {
+      "gold": "needs_review",
+      "predicted": "covered",
+      "count": 3
+    },
+    {
+      "gold": "needs_review",
+      "predicted": "error",
+      "count": 6
+    },
+    {
+      "gold": "needs_review",
+      "predicted": "needs_review",
+      "count": 14
+    },
+    {
+      "gold": "needs_review",
+      "predicted": "not_assessed",
+      "count": 26
+    },
+    {
+      "gold": "needs_review",
+      "predicted": "partially_covered",
+      "count": 6
+    },
+    {
+      "gold": "partially_covered",
+      "predicted": "covered",
+      "count": 11
+    },
+    {
+      "gold": "partially_covered",
+      "predicted": "error",
+      "count": 4
+    },
+    {
+      "gold": "partially_covered",
+      "predicted": "missing",
+      "count": 8
+    },
+    {
+      "gold": "partially_covered",
+      "predicted": "needs_review",
+      "count": 2
+    },
+    {
+      "gold": "partially_covered",
+      "predicted": "partially_covered",
+      "count": 4
+    }
+  ],
+  "reference_sha256": "af11abda7596a77c1e0d609f5f799185a7a05289dedd6106af0bc695247908f6",
+  "report_sha256": {
+    "extra": "7561b82513e123f431606fb54499159c48b4fe7ec49a7b3048c29ac85038bfe1",
+    "stc": "d68c0849ebe882c91be1543e80d20f704714e3814a034e992d7167885d1fb6e1",
+    "salla": "8b4fc2e5d985cc1e33ab3bd96f5b462a912d0203f1df25ca7e7548070cdaf5d0",
+    "nahdi": "82080bf1ab9b6fb786cecb1685676a555cfb1fb8795568b0c6a9606c137a3faa",
+    "sab": "7708937d6aae6326684dfe03721c0efbf0af532590f01abc1cfad7c76166c7a1",
+    "nahdha": "230352f947ffb6022dd3d9fcfbeefbcb59c38b79e54c1c777daf0ca3fc73982a",
+    "jarir": "e2299f42d11e825bd8505a0788ded058a491d41b8a01fd2e05343592d2592cb3",
+    "almosafer": "e38003c02cc4fb8e8773102c4dfff6c3a7a981cda514459a38c528f4dc67b890",
+    "spl": "7ec6bb8acb56f07efe0a5cf4b87d13bd4bf862bf10e8f4d20414fffc30c50430",
+    "saudileague": "1744e7f4a962b0de22de92d5bc2c169df7abcd35f181bc43a379eb292f5b50ce"
+  },
+  "API_calls": 0,
+  "reference_scope": "Document-based review of frozen policy texts; independent team confirmation not established.",
+  "limitations": [
+    "Comparison checks saved statuses, not semantic correctness of model evidence.",
+    "Saved list reports do not prove the exact policy input or model configuration; retain experiment manifests.",
+    "Unresolved reference judgments are excluded from the primary text score and retained in the secondary stratum."
+  ]
+}

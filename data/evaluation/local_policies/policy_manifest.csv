@@ -1,0 +1,11 @@
+﻿policy_id,organisation,language,url,retrieved_on,policy_file,policy_sha256,chars,review_status
+extra,eXtra,ar,https://www.extra.com/ar-sa/privacypolicy,2026-11-01,policies/extra.txt,b2ca33e11e46280b8b98aa2e9d367f517da7c0e00405c678d11c3e8a603c57c5,7979,pending_team_review
+stc,stc,en,https://www.stc.com.sa/en/personal/mobile/privacy.html,2026-11-01,policies/stc.txt,58ee162f6e58e763eec2da6a52f82010065f0d473aa68c11d5ec6a87505f41c5,6112,pending_team_review
+salla,Salla,en,https://salla.com/en-sa/privacy,2026-11-01,policies/salla.txt,9cf089843506e05151732114deb3e64623d928b12c9977763b58a44fa4413167,14985,pending_team_review
+nahdi,Nahdi,en,https://www.nahdionline.com/en-sa/static/privacy-policy,2026-11-01,policies/nahdi.txt,553c69ea284eb9be4b14e22cd0b073bb4fb71aca1beacf28c0a49af2eadc1f01,15482,pending_team_review
+sab,Saudi Awwal Bank,en,https://www.sab.com/en/personal/data-privacy-notice/,2026-11-01,policies/sab.txt,5db164a345c28621c1ffbacfa1624a56cf39de1546f989cbd35e4d25e92f29ee,34318,pending_team_review
+nahdha,Nahdha,ar,https://www.nahdha.sa/privacy-policy,2026-11-01,policies/nahdha.txt,bf4672a683aaf31ad801dc908266461a34383c9dffe64a95d62cfb28cacd1bea,8978,pending_team_review
+jarir,Jarir,en,https://www.jarir.com/sa-en/privacy-policy,2026-11-01,policies/jarir.txt,83d99973aa9e3fc9c881f3a38e4ed6b6b9bed3324564ff3ab49ab00ddc5c0ea0,7288,pending_team_review
+almosafer,Almosafer,en,https://www.almosafer.com/en/privacy-policy,2026-11-01,policies/almosafer.txt,345a7822d41351c9f5c4b3b68f6fe0f4ebe45a313e80460e855bf226248522f3,10303,pending_team_review
+spl,Saudi Post SPL,en,https://splonline.com.sa/en/privacy-notice/,2026-11-01,policies/spl.txt,4fde073315a27143755d32335c4b25dbc7d551d1f31bcbc812b396ec66834794,11955,pending_team_review
+saudileague,Saudi Pro League,en,https://www.spl.com.sa/en/news/privacy-policy,2026-11-01,policies/saudileague.txt,5e32830e2d6bf17726fcab54d1867f8015b66fd06e4955ff2e955c4547f01393,7575,pending_team_review

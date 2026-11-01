@@ -1,0 +1,3 @@
+# Release verification
+
+UI paths are simulated Streamlit rendering checks, not browser screenshots. Live service smoke checks are separate and are not new benchmark scores. Legal QA, outside-source abstention and local classification passed. The live policy route stopped on its first requirement with RuntimeError and no completed requirement. The detailed SDK cause was not retained, so no specific provider cause is inferred. API calls used the private local environment; no key is included. Browser visual verification was unavailable. The seven-page technical report was rendered and visually checked.

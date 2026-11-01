@@ -1,0 +1,16 @@
+google-genai==2.31.0
+python-dotenv==1.2.4
+pydantic==2.14.1
+sentence-transformers==6.1.0
+faiss-cpu==1.15.1
+rank-bm25==0.2.2
+scikit-learn==1.9.1
+numpy==2.4.6
+torch==2.14.1
+transformers==5.19.0
+openpyxl==3.1.5
+pypdf==6.20.0
+streamlit>=1.40,<2
+
+torchvision==0.29.1
+pandas>=2,<4

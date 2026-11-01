@@ -1,0 +1,9 @@
+## Ten-policy gap-analyser evaluation
+
+A separate batched experiment (`gap-policy-batched-v1`) assessed ten frozen policies with Gemini `gemini-3.5-flash-lite`, using one generation request per policy (10 requests in total). Each request included the full policy, 30 checklist checks grouped into 18 requirements, official legal passages and OPP-115 classifier candidate hints. Reference judgments and review notes were excluded from generation. This experiment differs from the application's 18-request policy route and must not be described as its evaluation.
+
+The reference contains 180 requirement judgments. The primary comparison uses 125 text-assessable judgments; 55 unresolved external/conditional judgments are reported separately. Exact status accuracy was **34.4% (43/125)**, and macro F1 over the three supported text classes was **0.4543**. Across all 180 judgments, 110 outputs passed structural/quotation validation and 70 were errors. Failed outputs remained in the denominator. Passing quotation validation does not establish semantic correctness.
+
+All-status agreement, including the unresolved stratum, was 31.1% (56/180); this is a secondary diagnostic. The result indicates that this batched gap-analyser configuration is not reliable enough to claim accurate policy assessment. The reference is document-based and has not been confirmed by independent team reviewers; no reviewer-agreement statistic is available. These are neither RAG question-answering scores nor legal-compliance scores.
+
+Validation error categories: {"Quote is not in policy": 89, "Covered check has no quote": 1}. Exact quote mismatches may include formatting differences or altered quotations; they were not silently accepted or repaired. First attempts were retained. No generation retry was used to replace these results.

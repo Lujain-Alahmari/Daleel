@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+.cache/
+# Distributed separately
+models/
+opp115_training/data/raw/
+opp115_training/data/processed/*.csv
+# Runtime user data
+reports/dashboard_live_v1/
+reports/gap_runs/
+reports/gap_smoke_test*/
+reports/gap_draft.txt
+reports/.rag_runtime/
+data/indexes/.rag_runtime/
+data/cache/
+# Full third-party policy snapshots remain internal
+data/evaluation/local_policies/policies/
+data/evaluation/local_policies/external_evidence/
+# Temporary and large packages
+*.zip
+*.tmp
+*.lock
+*.bak
+~$*
+archive/
+outputs/

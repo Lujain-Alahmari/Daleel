@@ -1,0 +1,122 @@
+[
+  {
+    "id": "nq001",
+    "language": "ar",
+    "split": "test",
+    "question": "ما الإطار الأمني الذي تتبعه جهة التحكم إذا لم تكن ملزمة بضوابط الهيئة الوطنية للأمن السيبراني، وهل يسقط عنها واجب حماية البيانات؟"
+  },
+  {
+    "id": "nq002",
+    "language": "ar",
+    "split": "test",
+    "question": "ما الضوابط التي تحكم طريقة جمع البيانات الشخصية؟ وهل تقبل طريقة تخفي غرض الجمع أو تقوم على الخداع أو الضغط على الشخص؟"
+  },
+  {
+    "id": "nq003",
+    "language": "ar",
+    "split": "test",
+    "question": "عند الاعتماد على مصلحة متحققة لصاحب البيانات مع صعوبة الوصول إليه، ما الذي يجب على جهة التحكم الاحتفاظ بدليل عليه؟"
+  },
+  {
+    "id": "nq004",
+    "language": "ar",
+    "split": "test",
+    "question": "من ينظم ترخيص الجهات التي تصدر شهادات اعتماد لحماية البيانات، ومع من يجري التنسيق عندما تقدم تلك الجهات خدمات نيابة عن جهات حكومية؟"
+  },
+  {
+    "id": "nq005",
+    "language": "en",
+    "split": "test",
+    "question": "Before using personal data in a processing operation, what checks must a controller take about its quality and fitness for the collection purpose?"
+  },
+  {
+    "id": "nq006",
+    "language": "en",
+    "split": "test",
+    "question": "When a controller has completed a processing impact assessment, must it share a copy with a processor, and which processors does this cover?"
+  },
+  {
+    "id": "nq007",
+    "language": "en",
+    "split": "test",
+    "question": "Once processing for a different purpose has a lawful basis, what scope documentation and data-minimisation steps does the Implementing Regulation require?"
+  },
+  {
+    "id": "nq008",
+    "language": "en",
+    "split": "test",
+    "question": "Who sets licensing rules for entities that audit personal-data processing, and which authority is involved when those services are provided on behalf of government entities?"
+  },
+  {
+    "id": "nq009",
+    "language": "ar",
+    "split": "test",
+    "question": "نعد نموذج حجز طاولات لمطعم ونفكر في طلب معلومات عن وظيفة الزائر ودخل أسرته لاحتمال الاستفادة منها مستقبلا. هل يكفي هذا الاحتمال، وعلى من تقع مسؤولية تبرير الحقول التي تجمع؟"
+  },
+  {
+    "id": "nq010",
+    "language": "ar",
+    "split": "test",
+    "question": "متجر يوجه مزود خدمة يعالج بيانات نيابة عنه إلى تنفيذ تعليمات تخالف أحد الأنظمة المعمول بها في المملكة. ما الواجب على مزود الخدمة، ولمن يوجه الإشعار وبأي صورة؟"
+  },
+  {
+    "id": "nq011",
+    "language": "ar",
+    "split": "test",
+    "question": "شركة تتولى المعالجة نيابة عن منصتنا استخدمت البيانات خلافا لتعليماتنا والاتفاق المبرم معها. هل يبقى وصفها بأنها معالج كافيا لنفي مسؤوليتها عن المخالفة؟"
+  },
+  {
+    "id": "nq012",
+    "language": "ar",
+    "split": "test",
+    "question": "لدينا مسوغ نظامي للإفصاح عن ملف عميل لشريك خاص، لكن الملف يتضمن معلومات تحدد هوية أفراد آخرين. ما الاحتياطات قبل إرسال الملف كاملا؟"
+  },
+  {
+    "id": "nq013",
+    "language": "en",
+    "split": "test",
+    "question": "Our online training platform instructs a processor to handle enrolment data. That processor now wants to appoint a separate supplier as a subprocessor. Who must seek approval, from whom, and what safeguards and opportunity to object are required?"
+  },
+  {
+    "id": "nq014",
+    "language": "en",
+    "split": "test",
+    "question": "Our store hires an independent reviewer to check its data processor. Can the store treat that appointment as removing its own responsibility for periodic processor-compliance checks?"
+  },
+  {
+    "id": "nq015",
+    "language": "en",
+    "split": "test",
+    "question": "A clinic acting as controller has completed an impact assessment that identifies harm to patients privacy from the planned processing. A vendor wants to start immediately to meet a delivery date. What must the clinic do about that finding?"
+  },
+  {
+    "id": "nq016",
+    "language": "en",
+    "split": "test",
+    "question": "An outsourced assessor offers to audit our personal-data processing, but its fee depends on reporting no compliance gaps. What independence and output-integrity safeguards should govern that assessor?"
+  },
+  {
+    "id": "nq017",
+    "language": "ar",
+    "split": "test",
+    "question": "وقعنا عقد خدمة برمجية مع مورد في الرياض ونختلف على قيمة فاتورته. ما المحكمة المختصة بهذا النزاع التجاري وما مهلة استئناف حكمه؟"
+  },
+  {
+    "id": "nq018",
+    "language": "ar",
+    "split": "test",
+    "question": "كم تبلغ الرسوم الحالية للحصول على شهادة اعتماد لحماية البيانات من جهة مرخصة، وهل حددت النصوص المتاحة مبلغا موحدا؟"
+  },
+  {
+    "id": "nq019",
+    "language": "en",
+    "split": "test",
+    "question": "Which auditing firms hold a valid personal-data audit licence from the competent authority today, and what are their licence expiry dates?"
+  },
+  {
+    "id": "nq020",
+    "language": "en",
+    "split": "test",
+    "question": "What mandatory password-reset interval, in days, does this corpus set for every employee account?"
+  }
+]

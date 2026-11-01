@@ -1,0 +1,1164 @@
+[
+  {
+    "id": "q001",
+    "language": "ar",
+    "question": "ما المعلومات التي يجب أن تتضمنها سياسة الخصوصية؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 12
+      }
+    ],
+    "reference_answer": "تتضمن سياسة الخصوصية غرض جمع البيانات، والبيانات المطلوب جمعها، وطريقة جمعها وحفظها ومعالجتها وإتلافها، وحقوق صاحب البيانات وكيفية ممارستها، وتُتاح له للاطلاع عليها عند جمع بياناته.",
+    "scenario_based": false,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة مقابل pdpl:12:ar: الغرض والبيانات ووسائل الجمع والحفظ والمعالجة والإتلاف والحقوق وإتاحة السياسة عند الجمع."
+  },
+  {
+    "id": "q002",
+    "language": "en",
+    "question": "What information must a privacy policy include?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 12
+      }
+    ],
+    "reference_answer": "Before collecting personal data, the Controller must make its privacy policy available to data subjects. It must explain the collection purpose, what data is collected, how it is collected, processed, stored and destroyed, and data subjects’ rights and how to exercise them.",
+    "scenario_based": false,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة مقابل pdpl:12:en، بما في ذلك إتاحة السياسة قبل الجمع وفق النص الإنجليزي."
+  },
+  {
+    "id": "q003",
+    "language": "ar",
+    "question": "لدينا تطبيق توصيل ونريد إرسال أرقام العملاء إلى وكالة تسويق. ما الشروط التي يجب التحقق منها قبل مشاركة البيانات واستخدامها للتسويق؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 1
+      },
+      {
+        "document_id": "pdpl",
+        "article_number": 15
+      },
+      {
+        "document_id": "pdpl",
+        "article_number": 26
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 11
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 17
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 20
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 29
+      }
+    ],
+    "reference_answer": "قبل مشاركة أرقام العملاء، يجب التحقق من المسوغ النظامي للإفصاح وتحديد صفة الوكالة: هل تعالج البيانات نيابة عن التطبيق أم لأغراض مستقلة؟ وللمعالجة التسويقية، يجب أن تكون البيانات غير حساسة، وقد جُمعت من صاحبها مباشرة، وأن تُستوفى شروط موافقته. وتكون المشاركة لغرض محدد وبالحد الأدنى اللازم مع حماية الخصوصية.\nوللتسويق المباشر، يجب توفير آلية سهلة لإيقاف الرسائل، وإظهار هوية المرسل، والتوقف دون تأخير غير مبرر عند العدول عن الموافقة. وإذا كانت الوكالة جهة معالجة نيابة عن التطبيق، فيجب التحقق من ضماناتها وتنظيم المعالجة باتفاقية والإشراف على التزامها.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "أضيفت pdpl:1 لدعم تمييز جهة التحكم والمعالجة. راجعت الفصل بين مسوغ الإفصاح وشروط التسويق، وعدم استبدال أحدهما بالآخر. بقية المرجع يغطي الضمانات والاتفاق والإشراف."
+  },
+  {
+    "id": "q004",
+    "language": "en",
+    "question": "Our Saudi online store wants to host customer data outside the Kingdom. What conditions and safeguards should we check before the transfer?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 29
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 2
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 3
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 4
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 5
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 7
+      }
+    ],
+    "reference_answer": "Before hosting customer data outside Saudi Arabia, confirm that the transfer serves a permitted purpose and does not prejudice national security or the Kingdom’s vital interests. Check whether the destination provides an adequate level of protection and limit the transfer to the minimum necessary data, unless a valid exemption applies. If relying on an exemption, verify its specific conditions and implement the required safeguards, such as standard contractual clauses, binding common rules or accreditation. Conduct a transfer risk assessment where required, including transfers relying on exemptions and continuous or large-scale transfers of sensitive data. Ensure that onward transfers also comply with the Law and Regulations.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "تحققت من إصدار أغسطس 2024 رقم 2.0 المحلي، ومن لائحة أم القرى المنشورة 2024-09-01 بقرار 1840. ترقيم 2 و3 و4 و5 و7 ومضمون الإجابة متوافقان؛ لا تعديل للإجابة أو المواد. أُلغي تعليق اختلاف الترقيم السابق. المصدر: https://www.uqn.gov.sa/details?p=25412"
+  },
+  {
+    "id": "q005",
+    "language": "ar",
+    "question": "طلب عميل حذف حسابه وبياناته، لكن بعض سجلاته مرتبطة بقضية قضائية قائمة. كيف نتعامل مع طلبه وما حدود الاحتفاظ بالبيانات؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 18
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 8
+      }
+    ],
+    "reference_answer": "يُراجع طلب الإتلاف، وتُتلف البيانات التي لا يوجد مسوغ نظامي للاحتفاظ بها. أما السجلات المرتبطة ارتباطًا وثيقًا بقضية منظورة أمام جهة قضائية، فيجب الاحتفاظ بها إذا كان ذلك مطلوبًا للقضية، ثم إتلافها عند استكمال الإجراءات القضائية، ما لم يوجد مسوغ نظامي آخر يوجب الاحتفاظ بها. وجود القضية لا يبرر الاحتفاظ بجميع بيانات العميل؛ يقتصر الاستثناء على البيانات التي تتحقق فيها شروط الاحتفاظ.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة مقابل pdpl:18 واللائحة 8: الاحتفاظ القضائي مقيد بالصلة الوثيقة والحاجة، ولا يبرر الاحتفاظ بكل البيانات؛ الإتلاف بعد زوال المسوغ."
+  },
+  {
+    "id": "q006",
+    "language": "en",
+    "question": "A customer asks for access to their personal data. What response period applies, and when can it be extended or the request refused?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 3
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 5
+      },
+      {
+        "document_id": "pdpl",
+        "article_number": 9
+      },
+      {
+        "document_id": "pdpl",
+        "article_number": 16
+      }
+    ],
+    "reference_answer": "Act without delay and within 30 days. Extend by up to 30 additional days for disproportionate effort or multiple requests from the data subject, with advance notice and reasons.\nA request may be refused if repetitive, manifestly unfounded, or requires disproportionate efforts, with reasons. Access may be restricted to prevent harm or, for public entities, for security, statutory or judicial requirements. Deny access in the Article 9(2) and Article 16(1)-(6) cases involving national interests, foreign relations, criminal justice, individual safety, others' privacy or the interests of persons lacking capacity. Protect intellectual property, trade secrets and other persons' identifying data.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "التقييم مقابل النص الإنجليزي المعتمد: implementing_regulation:3:en و5:en وpdpl:9:en و16:en. تستخدم شروط التمديد والرفض كما وردت في الإنجليزية؛ الاسترجاع والتقييم بنفس لغة السؤال."
+  },
+  {
+    "id": "q007",
+    "language": "ar",
+    "question": "اكتشفت شركتنا تسرب بيانات العملاء. متى يجب إشعار الجهة المختصة، ومتى يجب إشعار أصحاب البيانات، وما المعلومات المطلوبة؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 20
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 24
+      }
+    ],
+    "reference_answer": "يجب إشعار الجهة المختصة خلال مدة لا تتجاوز 72 ساعة من العلم بالتسرب إذا كان من شأنه الإضرار بالبيانات أو أصحابها أو التعارض مع حقوقهم أو مصالحهم. يشمل الإشعار وصف الحادثة وتوقيتها وظروفها ووقت العلم بها، وفئات البيانات وأنواعها والعدد الفعلي أو التقريبي للمتضررين، والمخاطر والآثار والتدابير المتخذة والمخططة، وبيان إشعار أصحاب البيانات، وبيانات التواصل. وتُستكمل المعلومات المتعذرة بأسرع وقت مع تبرير التأخير.ويُشعَر أصحاب البيانات دون تأخير غير مبرر إذا كان التسرب قد يضر ببياناتهم أو يتعارض مع حقوقهم أو مصالحهم. يكون الإشعار بلغة بسيطة وواضحة، ويتضمن وصف التسرب والمخاطر وتدابير الحد منها، واسم جهة التحكم ووسائل التواصل معها أو مسؤول حماية البيانات، وتوصيات تساعد المتضررين على تجنب المخاطر أو تقليل آثارها.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة مقابل pdpl:20 واللائحة 24: فرقت بين إشعار الجهة خلال 72 ساعة وفق شرط الضرر وإشعار صاحب البيانات دون تأخير، مع استكمال المعلومات وتبرير التأخير."
+  },
+  {
+    "id": "q008",
+    "language": "en",
+    "question": "Our company hires an external provider to process customer data. What must we check about the processor and include in the processing agreement?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 8
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 17
+      }
+    ],
+    "reference_answer": "Choose a processor with sufficient data-protection guarantees and monitor compliance.\nThe agreement must specify purpose, data categories, duration, breach notification without undue delay, foreign-law implications and subprocessors or other recipients. For mandatory disclosure under Saudi law, the agreement does not require the data subject’s prior consent, provided that the processor notifies the controller.\nIssue clear instructions. In case of any violation of the controller’s instructions or applicable Saudi laws, the processor must notify the controller in writing without undue delay. Subprocessing requires sufficient safeguards, suitable providers, the controller's prior approval and advance notice with an agreed opportunity to object.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "التقييم مقابل pdpl:8:en وimplementing_regulation:17:en. صاحب الموافقة في 17(1)(f) وحالة الإشعار الكتابي في 17(2) مصاغان وفق النسخة الإنجليزية المعتمدة. لا يعد اتباع المصدر الإنجليزي خطأ بسبب اختلاف الصياغة عن العربي."
+  },
+  {
+    "id": "q009",
+    "language": "ar",
+    "question": "متى يمكن معالجة البيانات الشخصية دون موافقة صاحبها، وما القيود على الاستناد إلى المصالح المشروعة؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 6
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 16
+      }
+    ],
+    "reference_answer": "تجيز المادة 6 معالجة البيانات دون موافقة صاحبها إذا كانت تحقق مصلحة متحققة له وكان الاتصال به متعذرًا أو صعبًا؛ أو كانت بمقتضى نظام آخر أو تنفيذًا لاتفاق سابق يكون طرفًا فيه؛ أو كانت جهة التحكم جهة عامة والمعالجة مطلوبة لأغراض أمنية أو لاستيفاء متطلبات قضائية؛ أو كانت ضرورية لتحقيق مصالح مشروعة لجهة التحكم، دون الإخلال بحقوق صاحب البيانات أو مصالحه ودون معالجة بيانات حساسة.\n\nوللاستناد إلى المصالح المشروعة، تشترط اللائحة ألا تكون جهة التحكم جهة عامة، وأن يكون الغرض مشروعًا، والمعالجة ضرورية وضمن التوقعات المعقولة لصاحب البيانات، مع الموازنة بين المصالح وعدم الإضرار بحقوقه ومصالحه. ويجب إجراء تقييم مسبق موثّق للغرض والضرورة والآثار والمخاطر وتدابير تجنبها. إذا أظهر التقييم مخالفة أو ضررًا، تُعدّل المعالجة ويُعاد التقييم، أو يُنظر في أساس نظامي آخر.",
+    "scenario_based": false,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة مقابل pdpl:6 واللائحة 16؛ الضرورة وعدم حساسية البيانات والموازنة والتوقعات المعقولة والتقويم المسبق موثقة. تعديل المعالجة وإعادة التقويم ليسا بديلين منفصلين."
+  },
+  {
+    "id": "q010",
+    "language": "en",
+    "question": "When is a personal data processing impact assessment required, and what must it address?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 22
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 25
+      }
+    ],
+    "reference_answer": "Prepare a written, documented assessment for sensitive-data processing, linking datasets from different sources, products or services likely to cause serious privacy harm, and the activities listed in Article 25(1)(c): large-scale and repetitive processing of data of persons lacking full or partial legal capacity, operations requiring constant monitoring, newly adopted technologies, or automated decisions.\nCover purpose and legal basis; data types, sources and recipients; processing nature, scope, geographical reach and context; necessity, proportionality and minimisation; harm severity and likelihood; and safeguards and their suitability. Share the assessment with relevant processors. If it identifies privacy harm, address the causes and repeat it.",
+    "scenario_based": false,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "التقييم مقابل pdpl:22:en وimplementing_regulation:25:en. تستخدم عبارة large-scale and repetitive وقائمة الأنشطة وفق النص الإنجليزي؛ يظل السؤال والمراجع والتقسيم كما هي."
+  },
+  {
+    "id": "q011",
+    "language": "ar",
+    "question": "ما شروط الرجوع عن الموافقة على معالجة البيانات الشخصية، وما أثر ذلك على المعالجة السابقة؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 5
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 12
+      }
+    ],
+    "reference_answer": "يحق لصاحب البيانات العدول عن موافقته في أي وقت بإبلاغ جهة التحكم عبر الوسائل المتاحة. ويجب أن تضع جهة التحكم إجراءات للعدول قبل طلب الموافقة، وأن تكون مماثلة أو أسهل من إجراءات الحصول عليها. عند العدول، تتوقف المعالجة المستندة إلى الموافقة دون تأخير غير مبرر، وتُتخذ التدابير المناسبة لإشعار الجهات التي أُفصح لها عن البيانات وطلب إتلافها. ولا يؤثر العدول على مشروعية المعالجة التي تمت بناءً على الموافقة قبل العدول، ولا على المعالجة المستندة إلى أساس نظامي آخر.",
+    "scenario_based": false,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة مقابل pdpl:5 واللائحة 12: العدول وآليته ووقف المعالجة وإشعار المتلقين وأثره على المعالجة السابقة والأسس الأخرى."
+  },
+  {
+    "id": "q012",
+    "language": "en",
+    "question": "When may standard contractual clauses be used for transferring personal data outside the Kingdom, and what other obligations remain?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 29
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 1
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 4
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 5
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 6
+      },
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 7
+      }
+    ],
+    "reference_answer": "Standard contractual clauses issued by the Competent Authority may be used as safeguards in the exemption cases that expressly permit them under Article 4: non-recurring or limited-period transfers involving a limited number of data subjects and no sensitive data; transfers necessary for central operations within a multinational group; and necessary scientific research transfers limited to the minimum data and excluding sensitive data.\n\nThey do not provide blanket permission to transfer data. The transfer must still serve a permitted purpose and satisfy applicable PDPL obligations, including protection of data subject rights. A pre-transfer risk assessment is required for transfers relying on Article 4, and onward transfers remain subject to the Law and Regulations. If the safeguards are breached or the Competent Authority finds them inadequate, the Controller must stop the transfer and notify recipients.",
+    "scenario_based": false,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "المواد 1 و4 و5 و6 و7 والمضمون مطابقون لإصدار النقل أغسطس 2024 المنشور في أم القرى: لا حاجة لتغيير الجواب أو المواد، بما في ذلك قيود عدم الحساسية والإيقاف والإشعار. اختلاف صفحة البوابة وحده لا ينسخ الإصدار المنشور. المصدر: https://www.uqn.gov.sa/details?p=25412"
+  },
+  {
+    "id": "q013",
+    "language": "ar",
+    "question": "ما نسبة ضريبة القيمة المضافة التي يجب أن يفرضها متجرنا على اشتراكات التطبيق؟",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "لا تحدد المصادر المتاحة للنظام واللائحة التنفيذية ولائحة نقل البيانات نسبة ضريبة القيمة المضافة على اشتراكات التطبيق. يتطلب السؤال الرجوع إلى الأنظمة والإرشادات الضريبية المختصة.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح بالنسبة إلى corpus: النظام واللوائح لا يحددان نسبة ضريبة القيمة المضافة. لا توجد مادة ذهبية ولا يلزم استرجاع جواب ضريبي خارجي."
+  },
+  {
+    "id": "q014",
+    "language": "en",
+    "question": "What exact minimum salary must our company pay its data protection officer?",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "The available PDPL sources do not specify an exact minimum salary for a data protection officer. Provisions about appointing the officer and defining their responsibilities do not establish a salary minimum. This question requires relevant employment and wage sources outside the corpus.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح بالنسبة إلى corpus: متطلبات تعيين مسؤول الحماية لا تحدد راتباً أدنى محدداً."
+  },
+  {
+    "id": "q015",
+    "language": "en",
+    "question": "Does the PDPL require us to use a specific brand and model of firewall? If so, which one?",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "The available PDPL sources do not prescribe a specific firewall brand or model. They require appropriate security measures and compliance with applicable cybersecurity controls or standards, but do not identify a mandatory firewall product.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح بالنسبة إلى corpus: pdpl:19 واللائحة 23 يضعان التزامات أمنية دون تحديد ماركة وطراز جدار حماية."
+  },
+  {
+    "id": "q016",
+    "language": "ar",
+    "question": "نحتفظ بأرقام هواتف العملاء دون أسمائهم. هل تظل بيانات شخصية، وما معيار اعتبار البيانات شخصية؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 1
+      }
+    ],
+    "reference_answer": "نعم إذا أمكن التعرف على الفرد مباشرة أو بصورة غير مباشرة؛ تشمل أمثلة البيانات الشخصية أرقام التواصل، ولا يشترط وجود الاسم معها.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لتعريف البيانات الشخصية في pdpl:1؛ رقم التواصل والتعرف غير المباشر كافيان لدحض اشتراط وجود الاسم."
+  },
+  {
+    "id": "q017",
+    "language": "en",
+    "question": "A business based outside Saudi Arabia processes personal data about residents in the Kingdom. Does operating abroad alone exclude that processing from the Law?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 2
+      }
+    ],
+    "reference_answer": "No. The scope includes processing by a party outside the Kingdom of personal data relating to individuals residing in the Kingdom; operating abroad alone is not an exclusion.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لنطاق pdpl:2: المعالجة من الخارج لبيانات المقيمين مشمولة؛ لا تعني أن كل نشاط عالمي لأي شركة مشمول دون صلة بالنطاق."
+  },
+  {
+    "id": "q018",
+    "language": "ar",
+    "question": "أحتفظ بجهات اتصال أقاربي لاستخدام عائلي محدود، ثم أفكر في استخدامها لبيع منتجات. هل يبقى الاستخدام ضمن الاستثناء الشخصي أو العائلي؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 2
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 2
+      }
+    ],
+    "reference_answer": "الاستخدام داخل الدائرة العائلية أو الاجتماعية المحدودة قد يدخل في الاستخدام الشخصي أو العائلي. الاستخدام التجاري أو المهني أو غير الربحي لا يعد كذلك؛ فلا يمتد الاستثناء تلقائياً إلى بيع المنتجات.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:2 واللائحة 2؛ الاستثناء شخصي أو عائلي، ولا يمتد للاستعمال التجاري أو المهني أو غير الربحي."
+  },
+  {
+    "id": "q019",
+    "language": "en",
+    "question": "Our registration form collects data directly from users. What must we tell them about mandatory fields, recipients, overseas processing and retention?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 13
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 4
+      }
+    ],
+    "reference_answer": "Before or at collection explain the controller identity and contacts, applicable DPO contact, legal basis and specific purpose, mandatory versus optional collection, consequences of not providing data, recipients and their capacity and overseas processing, retention period or criteria, rights and exercise mechanisms, and withdrawal of consent. Apply the stated information exceptions only where their conditions are met.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:13 واللائحة 4؛ المرجع يشمل هوية الجهة والمسؤول إن وجد والغرض والمسوغ والإلزام والحقوق والمتلقين والخارج والاحتفاظ. الاستثناءات لا تطبق تلقائياً."
+  },
+  {
+    "id": "q020",
+    "language": "ar",
+    "question": "نريد جعل الموافقة على تحليل بيانات لا يرتبط بتقديم خدمة التوصيل شرطاً للحصول على الخدمة. هل يجوز ربط الخدمة بهذه الموافقة؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 7
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 11
+      }
+    ],
+    "reference_answer": "لا يجوز جعل الموافقة شرطاً لخدمة أو منفعة إلا إذا كانت مرتبطة مباشرة بمعالجة البيانات التي أعطيت الموافقة عليها. يلزم أن تكون الموافقة حرة، والأغراض واضحة ومحددة، ولكل غرض موافقة مستقلة.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:7 واللائحة 11؛ اشتراط الموافقة مقيد بالصلة المباشرة بالخدمة، مع حرية الموافقة واستقلال الأغراض."
+  },
+  {
+    "id": "q021",
+    "language": "en",
+    "question": "After correcting a customer's address, do we need to notify recipients and the customer or keep a record of the update?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 17
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 22
+      }
+    ],
+    "reference_answer": "Verify the correction using supporting documents where necessary, notify previous recipients without delay, notify the data subject once the correction is completed, and document the updates. Correct, complete or update inaccurate or outdated data without undue delay.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:17 واللائحة 22؛ إشعار المتلقين وصاحب البيانات وتوثيق التصحيح دون تأخير."
+  },
+  {
+    "id": "q022",
+    "language": "ar",
+    "question": "نجمع بيانات صحية بموافقة صاحبها. هل تكفي موافقة ضمنية، وما متطلبات توثيق الموافقة وتحديد أغراضها؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 1
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 11
+      }
+    ],
+    "reference_answer": "الموافقة على معالجة البيانات الحساسة يجب أن تكون صريحة. تكون حرة وغير مضللة، بأغراض واضحة ومحددة تبين عند أو قبل طلبها، وصادرة ممن له أهلية، وموثقة بما يتيح التحقق منها مستقبلاً، مع موافقة مستقلة لكل غرض.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "أضيفت pdpl:1 لإثبات أن البيانات الصحية بيانات حساسة، ثم اللائحة 11 للموافقة الصريحة وشروطها. لا تفترض أن الموافقة أساس المعالجة في كل حالة استثنائية."
+  },
+  {
+    "id": "q023",
+    "language": "en",
+    "question": "When consent is the basis for processing, does a decision made solely through automated processing require explicit consent?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 11
+      }
+    ],
+    "reference_answer": "Yes. The Regulation lists decisions based solely on automated processing among the cases requiring explicit consent. The other consent conditions still apply, including clear purposes, free consent, separate consent per purpose and verifiable documentation.",
+    "scenario_based": false,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة للائحة 11(2)(ج). السؤال يقيد الحالة بكون الموافقة أساس المعالجة، فلا يستنتج أن كل معالجة آلية لا مسوغ لها إلا الموافقة."
+  },
+  {
+    "id": "q024",
+    "language": "ar",
+    "question": "في مستشفى، هل يصح أن يحصل جميع الموظفين على الوصول الكامل لملفات المرضى؟ وما ضوابط توزيع الصلاحيات وتوثيق المعالجة؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 23
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 26
+      }
+    ],
+    "reference_answer": "يقصر الوصول والمعالجة على الحد الأدنى من الموظفين والبيانات اللازم لتقديم الخدمات الصحية أو التأمين. توزع المسؤوليات والصلاحيات دون تداخل يضيع المسؤولية، وتوثق مراحل المعالجة والمسؤول عنها، وتطبق الضوابط القطاعية ذات الصلة وتلزم جهات المعالجة بالإجراءات في الاتفاقات.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:23 واللائحة 26؛ راجعت الحد الأدنى للوصول والمعالجة والتدرج والمسؤوليات والتوثيق والاتفاقات والضوابط القطاعية."
+  },
+  {
+    "id": "q025",
+    "language": "en",
+    "question": "A lender obtains a request from another entity to disclose a customer's credit data. What consent and notification safeguards apply?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 24
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 11
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 27
+      }
+    ],
+    "reference_answer": "Verify explicit consent for credit-data collection, changes of purpose, disclosure or publication as applicable under the Law and Credit Information Law. Notify the data subject of a request for disclosure, and implement the security and sector controls required for credit data. Consent must be documented for later verification.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:24 واللائحتين 11 و27؛ الموافقة الصريحة والإشعار بطلب الإفصاح، دون اختراع استثناءات من نظام المعلومات الائتمانية غير المدرج كاملاً."
+  },
+  {
+    "id": "q026",
+    "language": "ar",
+    "question": "انتهى نشاط معالجة معين في شركتنا. كم نحتفظ بسجل أنشطته، وهل يجب أن يكون مكتوباً ومحدثاً ومتاحاً للجهة المختصة؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 18
+      },
+      {
+        "document_id": "pdpl",
+        "article_number": 31
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 33
+      }
+    ],
+    "reference_answer": "يحتفظ بسجل أنشطة المعالجة أثناء استمرار المعالجة وخمس سنوات تبدأ من انتهاء النشاط. تكون السجلات مكتوبة ودقيقة ومحدثة ومتاحة للجهة المختصة عند طلبها. هذه مدة لسجل النشاط ولا تعني جواز الاحتفاظ بكل البيانات الأصلية للمدة نفسها.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "أضيفت pdpl:18 لدعم التمييز بين مدة حفظ سجل النشاط ومشروعية الاحتفاظ بالبيانات الأصلية. مدة الخمس سنوات في اللائحة 33 تخص سجل النشاط."
+  },
+  {
+    "id": "q027",
+    "language": "en",
+    "question": "Which types of controller activities trigger the requirement to appoint a personal data protection officer under the Implementing Regulation?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 32
+      }
+    ],
+    "reference_answer": "The listed cases are a public entity providing services involving large-scale processing; primary activities requiring regular and systematic monitoring of data subjects; and core activities based on processing sensitive personal data. The competent authority also issues appointment rules, so the article is not a substitute for applicable additional rules.",
+    "scenario_based": false,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لحالات التعيين في اللائحة 32 ضمن corpus؛ الإحالة لقواعد تعيين إضافية تمنع اعتبار النص قائمة شاملة لكل قواعد خارج corpus."
+  },
+  {
+    "id": "q028",
+    "language": "ar",
+    "question": "علمت بحادثة تمس بياناتي بعد وقوعها بمدة. ما مهلة تقديم الشكوى للجهة المختصة، وما المعلومات التي تتضمنها؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 34
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 37
+      }
+    ],
+    "reference_answer": "تقدم الشكوى خلال مدة لا تتجاوز 90 يوماً من وقوع الحادثة أو العلم بها، وتقدر الجهة قبولها بعد المدة عند وجود أسباب معقولة منعت التقديم. تتضمن مكان وزمان المخالفة، وبيانات مقدم الشكوى والجهة المشكو منها، ووصفاً واضحاً محدداً والأدلة والمعلومات والمتطلبات الإضافية التي تحددها الجهة.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:34 واللائحة 37؛ راجعت بدء 90 يوماً من الحادثة أو العلم، وسلطة تقدير التأخر وبيانات الشكوى والأدلة."
+  },
+  {
+    "id": "q029",
+    "language": "en",
+    "question": "Which exact monthly subscription price does the PDPL require our cloud-storage business to charge customers?",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "The available legal corpus does not prescribe a subscription price for a cloud-storage business. A price cannot be inferred from personal-data protection duties.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح: corpus لا يفرض سعراً لاشتراك خدمة تخزين. رسوم خدمات الجهة المختصة في النظام لا تجيب عن سعر اشتراك الشركة."
+  },
+  {
+    "id": "q030",
+    "language": "ar",
+    "question": "كم عدد الموظفين الذي يجب على شركتنا تعيينهم في قسم خدمة العملاء وفق نظام حماية البيانات؟",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "لا يحدد corpus المتاح عدداً إلزامياً لموظفي خدمة العملاء في الشركة. لا تستنتج متطلبات التوظيف العددية من التزامات الاستجابة لحقوق أصحاب البيانات.",
+    "scenario_based": true,
+    "split": "development",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح: لا تحدد النصوص عدداً لموظفي خدمة العملاء؛ عدد مسؤولي حماية البيانات ليس جواباً عن موظفي خدمة العملاء."
+  },
+  {
+    "id": "q031",
+    "language": "ar",
+    "question": "طلب عميل نسخة من بياناته. هل تكفي صيغة إلكترونية غير مقروءة، وهل يحق له طلب نسخة مطبوعة؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 4
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 6
+      }
+    ],
+    "reference_answer": "تقدم البيانات بصيغة واضحة مقروءة وبصيغة إلكترونية شائعة الاستخدام، ويجوز طلب نسخة مطبوعة متى كان ذلك ممكناً. تحمى حقوق الغير والملكية الفكرية والأسرار التجارية، ولا تكشف بيانات تحدد هوية شخص آخر.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:4 واللائحة 6؛ صيغة مقروءة وإلكترونية شائعة ونسخة مطبوعة إذا أمكن مع حماية حقوق الغير."
+  },
+  {
+    "id": "q032",
+    "language": "en",
+    "question": "Someone emails us asking to exercise another person's data rights. What identity checks and request records should we maintain before acting?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 3
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 13
+      }
+    ],
+    "reference_answer": "Verify the requester's identity before executing the request and establish that the person may exercise the relevant rights. Where the requester acts as a legal guardian for a person lacking full or partial capacity, take appropriate measures to verify guardianship. Document and keep all requests, including oral requests. An unverified email does not establish entitlement to another person's data.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "أضيفت اللائحة 13 لأن السؤال عن طلب يخص شخصاً آخر؛ أضيف التحقق من الولاية عند انطباقها، مع الحفاظ على التحقق من الهوية وسجلات الطلبات في المادة 3."
+  },
+  {
+    "id": "q033",
+    "language": "ar",
+    "question": "يتقدم ولي بطلب نيابة عن شخص ناقص الأهلية. ما الذي نتحقق منه عند قبول موافقته، وماذا يحدث إذا اكتملت أهلية صاحب البيانات؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 11
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 13
+      }
+    ],
+    "reference_answer": "يتصرف الولي بما يحقق مصلحة صاحب البيانات، ويتحقق من صحة ولايته وتراعى شروط الموافقة في المادة 11: الإرادة الحرة، والغرض الواضح والمحدد، والتوثيق، والموافقة المستقلة لكل غرض، والصراحة في حالاتها. لا تسبب موافقته ضرراً بمصالح صاحب البيانات، ويمكّن صاحب البيانات من ممارسة حقوقه عند اكتمال أهليته.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "أضيفت اللائحة 11 لاستكمال الشروط التي تحيل إليها المادة 13، وليس الاقتصار على إثبات الولاية وحده."
+  },
+  {
+    "id": "q034",
+    "language": "en",
+    "question": "A customer disputes data accuracy and we request evidence to check it. What happens to processing during verification and to the evidence after verification?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 7
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 22
+      }
+    ],
+    "reference_answer": "The data subject may obtain a restriction while accuracy is verified, subject to the stated legal limitation. Where inaccurate or incomplete data may cause harm, processing must be suspended until corrected or updated. Necessary supporting evidence may be requested but must be destroyed once verification is completed.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة للائحتين 7 و22: تقييد التحقق من الدقة، وإيقاف المعالجة عند ضرر البيانات غير الصحيحة أو الناقصة، وإتلاف الوثائق بعد التحقق. أبقي قيد عدم مخالفة النظام كما ورد دون توسيع تفسيره."
+  },
+  {
+    "id": "q035",
+    "language": "ar",
+    "question": "نريد الاحتفاظ بإحصاءات بعد إزالة الهوية. ما الشروط اللازمة حتى تعد البيانات مجهولة الهوية، وهل يكفي حذف الاسم فقط؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 1
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 9
+      }
+    ],
+    "reference_answer": "لا يكفي حذف الاسم إذا أمكن التعرف على الشخص بوسائل أخرى. يجب إزالة المعرفات المباشرة وغير المباشرة بما يجعل إعادة التعرف مستحيلة، وتقويم فعالية الوسائل وتحديثها والتدابير والمخاطر، وإجراء تقويم الأثر حيث يلزم. البيانات المجهولة الهوية وفق هذه الشروط لا تعد بيانات شخصية.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لتعريفي الإخفاء في اللائحة 1 وضوابط اللائحة 9؛ لا تساو بين حذف الاسم واستحالة إعادة التعرف، وتقويم الأثر مشروط بحالات إحالة المادة 25."
+  },
+  {
+    "id": "q036",
+    "language": "en",
+    "question": "We replace customer identifiers with codes but retain a separate re-identification key. Is that anonymisation or pseudonymisation, and is the distinction important?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 1
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 9
+      }
+    ],
+    "reference_answer": "This is pseudonymisation: direct identification needs additional information, which must be kept separately with appropriate controls. Anonymisation permanently prevents identification through direct and indirect identifiers. Only data actually anonymised under those conditions ceases to be personal data; retaining a usable re-identification key does not achieve that result.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة للائحتين 1 و9: مفتاح إعادة الربط يعني ترميزاً لا إخفاء هوية نهائياً؛ لا تستنتج خروج البيانات المرمزة من الحماية."
+  },
+  {
+    "id": "q037",
+    "language": "ar",
+    "question": "نريد تصوير الهوية الوطنية لكل زائر للاحتفاظ بها احتياطاً. متى يسمح بنسخ الوثائق الرسمية، وكيف نتعامل مع النسخ بعد انتهاء غرضها؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 28
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 31
+      }
+    ],
+    "reference_answer": "الأصل الامتناع عن تصوير أو نسخ الوثائق الرسمية التي تحدد هوية صاحب البيانات؛ يستثنى طلب الجهة العامة المختصة أو مقتضى نظامي. تحمى النسخ وتتلف بعد انتهاء الغرض إلا إذا وجد مسوغ نظامي للاحتفاظ بها، ولا يكفي الاحتفاظ الاحتياطي وحده لتبرير النسخ.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:28 واللائحة 31: حظر النسخ مع استثناء نظامي أو طلب جهة مختصة، ثم الحماية والإتلاف فور زوال الغرض ما لم يوجد متطلب احتفاظ."
+  },
+  {
+    "id": "q038",
+    "language": "en",
+    "question": "An employee who handled personal data has left the company. Does their confidentiality obligation end with their employment?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 41
+      }
+    ],
+    "reference_answer": "No. Anyone engaged in processing personal data must protect its confidentiality even after the end of the occupational or contractual relationship.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة مباشرة لـpdpl:41؛ استمرار السرية بعد انتهاء العلاقة الوظيفية أو التعاقدية."
+  },
+  {
+    "id": "q039",
+    "language": "ar",
+    "question": "متى يتحقق إتلاف البيانات بحسب تعريف النظام؟ هل يكفي إخفاؤها من شاشة المستخدم إذا بقيت قابلة للقراءة والاسترجاع والتعرف على صاحبها؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 1
+      }
+    ],
+    "reference_answer": "الإتلاف إجراء يجعل من المتعذر الاطلاع على البيانات أو استعادتها مرة أخرى أو معرفة صاحبها على وجه التحديد، وفق تعريف النظام. مجرد إخفائها من الشاشة مع بقاء إمكان الاطلاع والاستعادة والتعرف على صاحبها لا يحقق ذلك.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "ضبطت السؤال ليذكر استمرار إمكان التعرف، وأعدت صياغة التعريف وفق أداة أو في العربي؛ لأن بقاء بيانات مقروءة مجهولة الهوية نهائياً ليس هو حالة الإخفاء من الشاشة."
+  },
+  {
+    "id": "q040",
+    "language": "en",
+    "question": "Do the Law's protections exclude information about a deceased person when it can identify that person or a family member?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 2
+      }
+    ],
+    "reference_answer": "No. The stated scope includes data of the deceased if it would specifically identify the deceased person or a family member.",
+    "scenario_based": false,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة مباشرة لـpdpl:2؛ بيانات المتوفى مشمولة بشرط إمكان تحديده أو أحد أفراد أسرته."
+  },
+  {
+    "id": "q041",
+    "language": "ar",
+    "question": "تطلب جهة عامة بيانات من غير صاحبها لتحقيق مصلحة عامة. ما الضوابط المتعلقة بتحديد المصلحة والحد الأدنى والتوثيق؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 10
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 21
+      }
+    ],
+    "reference_answer": "تكون المعالجة أو الطلب ضروريين لمصلحة عامة محددة بوضوح وترتبط باختصاص الجهة، مع تدابير للحد من الضرر وضمان السرية. توثق العمليات في سجلات الأنشطة ويقتصر الجمع والمعالجة على الحد الأدنى اللازم، مع استيفاء المسوغ النظامي ذي الصلة.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:10 واللائحة 21: ضرورة المصلحة العامة المحددة وارتباطها باختصاص الجهة والحد الأدنى والتوثيق والحد من الضرر."
+  },
+  {
+    "id": "q042",
+    "language": "en",
+    "question": "If a data-protection violation causes someone financial loss or emotional harm, does the Law provide a route to seek compensation separate from penalties?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 40
+      }
+    ],
+    "reference_answer": "Yes. Without prejudice to the prescribed penalties, a person harmed by a violation may apply to the competent court for compensation proportionate to material or moral damage. The article does not guarantee a particular award or decide an individual case.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:40: التعويض عن ضرر مادي أو معنوي أمام المحكمة المختصة، دون ضمان نتيجة الدعوى أو مبلغ معين."
+  },
+  {
+    "id": "q043",
+    "language": "ar",
+    "question": "شخص نشر بيانات حساسة بالمخالفة للنظام بقصد الإضرار بصاحبها أو تحقيق منفعة شخصية. ما العقوبة الأساسية المذكورة، وهل تتغير عند العود؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 35
+      }
+    ],
+    "reference_answer": "دون إخلال بعقوبة أشد، تصل العقوبة إلى السجن سنتين أو غرامة ثلاثة ملايين ريال أو كليهما. عند العود يجوز للمحكمة مضاعفة الغرامة ضمن الحد الذي لا يتجاوز ضعف حدها، مع مراعاة اختصاص التحقيق والادعاء والمحكمة المنصوص عليه.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:35: قصد الإضرار أو المنفعة الشخصية شرط، والعقوبات حدود قصوى، ومضاعفة الغرامة في العود جوازية للمحكمة ضمن الضعف."
+  },
+  {
+    "id": "q044",
+    "language": "en",
+    "question": "For a private entity's violation outside Article 35, what warning or fine ceiling does Article 36 specify, and what does it say about repeat violations?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 36
+      }
+    ],
+    "reference_answer": "Without prejudice to a harsher penalty under another law, the article provides a warning or a fine up to five million riyals for covered private natural or legal persons. For repeat violations the fine may be doubled, up to twice that maximum. This is a statutory ceiling, not an automatic fine for every case.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:36: الأشخاص الخاصة وحالات غير المادة 35، والإنذار أو الغرامة وحدها الأقصى مع عدم الإخلال بعقوبة أشد."
+  },
+  {
+    "id": "q045",
+    "language": "ar",
+    "question": "سنستخدم بيانات شخصية في بحث دون موافقة صاحبها. هل يكفي وصف النشاط بأنه بحث، وما شروط الإعفاء وضوابط تقليل البيانات وحماية أصحابها؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 27
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 30
+      }
+    ],
+    "reference_answer": "لا يكفي وصفه بالبحث. يلزم تحقق إحدى حالات المادة 27: عدم دلالة البيانات على الهوية تحديداً، أو إتلاف ما يدل عليها أثناء المعالجة وقبل الإفصاح دون بيانات حساسة، أو مقتضى نظام آخر أو اتفاق سابق يكون صاحبها طرفاً فيه. تحدد الأغراض وتوثق، وتجمع أقل بيانات لازمة، ويرمز ما يعالج إذا أمكن تحقيق الغرض بذلك، وتتخذ تدابير تمنع الأثر السلبي على الحقوق والمصالح.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:27 واللائحة 30؛ فرقت بين إحدى حالات عدم اشتراط الموافقة والضوابط البحثية الإضافية، والترميز ليس بديلاً تلقائياً عن تحقق المسوغ."
+  },
+  {
+    "id": "q046",
+    "language": "en",
+    "question": "Who publishes and reviews the list of destinations offering adequate protection, how often is it reviewed, and can transfers to a listed destination be suspended?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 3
+      }
+    ],
+    "reference_answer": "The competent authority publishes the list on its official website and reviews it every four years or as necessary under the specified legal-protection, supervisory, cooperation, disclosure, treaty and onward-transfer criteria. It may amend the list or suspend transfers or disclosure to listed destinations under the relevant procedures. Listing is not an irrevocable permission.",
+    "scenario_based": false,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "راجعت المادة 3 المنشورة في أم القرى 2024-09-01: القائمة ومراجعتها كل أربع سنوات أو عند الاقتضاء والتعديل والتعليق متوافقة. لا تعديل للجواب أو الرقم؛ أُلغي تعليق الترقيم السابق. المصدر: https://www.uqn.gov.sa/details?p=25412"
+  },
+  {
+    "id": "q047",
+    "language": "ar",
+    "question": "نعتمد على إعفاء لنقل البيانات، ثم أخفقنا في تنفيذ الضمانات المناسبة أو قررت الجهة المختصة عدم كفايتها. هل نستمر بالنقل، ومن نُشعر؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 6
+      }
+    ],
+    "reference_answer": "لا يستمر الإعفاء في هاتين الحالتين. يجب وقف النقل أو الإفصاح وإشعار الجهات التي نقلت البيانات إليها أو أفصح لها عنها.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "راجعت المادة 6 المنشورة في أم القرى 2024-09-01: إخلال الضمانات أو عدم كفايتها يوقف الإعفاء ويلزم الوقف وإشعار المتلقين. الجواب والرقم صحيحان دون تعديل. المصدر: https://www.uqn.gov.sa/details?p=25412"
+  },
+  {
+    "id": "q048",
+    "language": "en",
+    "question": "Once personal data has reached an overseas recipient, do subsequent transfers stop being subject to the Saudi Law and Regulations?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 5
+      }
+    ],
+    "reference_answer": "No. The Law and Regulations continue to apply to subsequent transfers, without prejudice to the controller/processor and disclosure provisions expressly referenced in Article 5. The first transfer is not a blanket exemption for onward transfers.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "راجعت المادة 5 المنشورة في أم القرى 2024-09-01: تطبيق النظام واللوائح على النقل اللاحق، مع الإحالات ذات الصلة. الجواب والرقم صحيحان دون تعديل. المصدر: https://www.uqn.gov.sa/details?p=25412"
+  },
+  {
+    "id": "q049",
+    "language": "ar",
+    "question": "ما الأغراض الأخرى للنقل إلى الخارج التي تسردها لائحة النقل، غير الأغراض المذكورة صراحة في النظام؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "transfer_regulation",
+        "article_number": 2
+      }
+    ],
+    "reference_answer": "تشمل العمليات التشغيلية الضرورية للمعالجة المركزية لتمكين جهة التحكم من ممارسة نشاطها، وتقديم خدمة أو منفعة لصاحب البيانات، والبحوث والدراسات العلمية. ذكر غرض مسموح لا يعفي من شروط وضمانات النقل الأخرى.",
+    "scenario_based": false,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "راجعت المادة 2 المنشورة في أم القرى 2024-09-01: الأغراض الثلاثة المذكورة في الجواب متوافقة. لا تعديل للجواب أو الرقم؛ أُلغي تعليق اختلاف الترقيم السابق. المصدر: https://www.uqn.gov.sa/details?p=25412"
+  },
+  {
+    "id": "q050",
+    "language": "en",
+    "question": "If our organisation must appoint a data protection officer, may the officer be an external contractor, and what key responsibilities are listed?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 32
+      }
+    ],
+    "reference_answer": "Subject to the appointment requirements, the officer may be an executive, employee or external contractor. Listed duties include liaison with the authority, supervising assessments and audit/control reporting, enabling rights, breach notification, handling requests and complaints, updating activity records and addressing violations through corrective actions.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة للائحة 32 بشأن التعاقد الخارجي ومسؤوليات مسؤول الحماية. يتقيد ذلك بمتطلبات التعيين والقواعد المشار إليها في المادة ضمن corpus."
+  },
+  {
+    "id": "q051",
+    "language": "ar",
+    "question": "وجدنا بيانات منشورة على موقع عام ونريد الإفصاح عنها لطرف آخر. هل مجرد ظهورها للعامة يكفي، وما حدود الغرض والعناية وتقليل البيانات؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 15
+      },
+      {
+        "document_id": "pdpl",
+        "article_number": 16
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 20
+      }
+    ],
+    "reference_answer": "يجب التحقق من أن إتاحة البيانات للعامة لم تتم بالمخالفة للنظام ولوائحه. يرتبط طلب الإفصاح بغرض محدد وواضح، وتبذل العناية لحماية خصوصية صاحب البيانات وغيره، ويقتصر على الحد الأدنى اللازم. توثق تواريخ الإفصاح وطرقه وأغراضه في سجل الأنشطة، وتطبق حالات منع الإفصاح في المادة 16. وعند ارتباط البيانات ببيانات فرد آخر تراعى الموازنة بين الحقوق وترميز بياناته ما أمكن وفق ضوابط اللائحة.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "استكملت نوع التوثيق وحماية الفرد الآخر من اللائحة 20؛ الإتاحة العامة لا تمنح إذناً مطلقاً بتجاوز المادة 16."
+  },
+  {
+    "id": "q052",
+    "language": "en",
+    "question": "Which exact AES key length does this legal corpus mandate for encrypting every customer database?",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "The available corpus requires appropriate security measures and refers to relevant cybersecurity controls, but does not prescribe an exact AES key length for every database. The answer needs applicable technical standards outside this corpus.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح بالنسبة إلى corpus: لا توجد قيمة مفاتيح AES مفروضة لكل قاعدة بيانات؛ الإحالة لمعايير أمنية خارجية لا تجيز تخمين الرقم. هذا لا ينفي وجود متطلبات في تلك المعايير."
+  },
+  {
+    "id": "q053",
+    "language": "ar",
+    "question": "نريد توفير قنوات لطلبات أصحاب البيانات. هل تقتصر القنوات على الحضور الشخصي، وما الوسائل التي تسردها اللائحة؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 10
+      }
+    ],
+    "reference_answer": "لا تقتصر على الحضور الشخصي. تشمل الوسائل البريد الإلكتروني والرسائل النصية والعنوان الوطني والتطبيقات الإلكترونية وغيرها من وسائل التواصل المشروعة التي توفرها الجهة. يختار صاحب البيانات وسيلة أو أكثر بحسب تفضيله ضمن الخيارات المتاحة.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة مباشرة لوسائل تقديم الطلبات في اللائحة 10؛ الاختيار من الخيارات التي توفرها الجهة، وليس إلزامها بكل قناة ممكنة."
+  },
+  {
+    "id": "q054",
+    "language": "en",
+    "question": "We lawfully reach the point where customer data must be destroyed. Is deleting the live database enough if backups and disclosed copies still exist?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "pdpl",
+        "article_number": 18
+      },
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 8
+      }
+    ],
+    "reference_answer": "No. Subject to applicable lawful retention and regulatory requirements, destroy all copies in the controller's systems including backups, and take appropriate measures to notify recipients and request destruction. Deleting the live copy alone does not meet the listed destruction steps.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة لـpdpl:18 واللائحة 8؛ يشمل الإتلاف النسخ الاحتياطية وإشعار المتلقين وطلب الإتلاف، مع حفظ استثناءات الاحتفاظ النظامية."
+  },
+  {
+    "id": "q055",
+    "language": "ar",
+    "question": "ما اسم شركة التأمين التي يفرض نظام حماية البيانات على منشأتنا شراء وثيقة تأمين سيبراني منها؟",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "لا تسمي المصادر المتاحة شركة تأمين إلزامية لشراء وثيقة سيبرانية. لا يجوز استنتاج اسم مورد تجاري من أحكام حماية البيانات.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح: لا يسمي corpus شركة تأمين سيبراني إلزامية. لا تخلط جهات تنظيم التأمين الواردة في البيانات الصحية مع مورد تأمين مطلوب."
+  },
+  {
+    "id": "q056",
+    "language": "en",
+    "question": "How many milliseconds may our mobile app take to open the privacy-policy page under the PDPL?",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "The available corpus does not set a millisecond performance target for opening a privacy-policy page. A technical latency target cannot be inferred from duties to provide privacy information.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح: لا يحدد corpus زمناً بالمللي ثانية لفتح صفحة السياسة. الإتاحة والوضوح لا يثبتان هدف أداء رقمي."
+  },
+  {
+    "id": "q057",
+    "language": "ar",
+    "question": "حصلنا على بيانات عميل من جهة أخرى وليس منه مباشرة. متى نبلغه، وما المعلومات الإضافية والاستثناءات ذات الصلة؟",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 4
+      }
+    ],
+    "reference_answer": "يبلغ صاحب البيانات دون تأخير غير مبرر وخلال مدة لا تتجاوز 30 يوماً من تلقي البيانات. يشمل الإبلاغ هوية جهة التحكم ووسائل التواصل، وبيانات مسؤول الحماية إن وجد، والمسوغ والغرض، والاحتفاظ أو معاييره، والحقوق وآلية ممارستها، والعدول عن الموافقة، وإلزامية أو اختيارية الجمع أو المعالجة، إضافة إلى فئات البيانات ومصدرها. لا يسري ذلك عند توافر المعلومات مسبقاً، أو تعذر الإبلاغ أو تطلبه جهداً غير معقول، أو الجمع تنفيذاً لنظام، أو جمع جهة عامة للأمن أو القضاء أو المصلحة العامة، أو خضوع البيانات لسرية مهنية مقررة نظاماً، وفق شروط المادة 4.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "استكملت قائمة المعلومات بدلاً من الإحالة العامة وحدها، وحددت بداية مهلة 30 يوماً من تلقي البيانات. الاستثناءات من واجب الإبلاغ لا تعد وحدها مسوغاً لجمع البيانات."
+  },
+  {
+    "id": "q058",
+    "language": "en",
+    "question": "What organisational safeguards must a credit-data service apply to prevent unauthorised access or misuse, including sector requirements and staff responsibilities?",
+    "answerable": true,
+    "gold_articles": [
+      {
+        "document_id": "implementing_regulation",
+        "article_number": 27
+      }
+    ],
+    "reference_answer": "Apply organisational, technical and administrative measures against unauthorised use, access, misuse, use outside the collection purpose and disclosure. Adopt applicable Saudi Central Bank and other relevant authority controls defining staff and contractor roles; comply with the Credit Information Law and the Regulation's consent and disclosure-notification requirements.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "مطابقة للائحة 27؛ ضبطت الفرق بين التنظيم الأمني القطاعي والموافقة والإشعار. لا يزعم المرجع تفصيل نظام المعلومات الائتمانية خارج corpus."
+  },
+  {
+    "id": "q059",
+    "language": "ar",
+    "question": "ما معدل ضريبة الاستقطاع على فاتورة مقدم خدمة أجنبي يعالج بيانات عملائنا؟",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "لا تحدد المصادر المتاحة معدل ضريبة الاستقطاع لهذه الفاتورة. يتطلب السؤال مصادر ضريبية مختصة خارج corpus حماية البيانات.",
+    "scenario_based": true,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح: لا تحدد النصوص معدل ضريبة استقطاع لفاتورة معالج أجنبي. سؤال ضريبي لا تجيب عنه شروط نقل البيانات."
+  },
+  {
+    "id": "q060",
+    "language": "en",
+    "question": "Which countries are on the competent authority's adequacy list today, and is Canada currently included?",
+    "answerable": false,
+    "gold_articles": [],
+    "reference_answer": "The supplied transfer regulation describes how the authority publishes and reviews an adequacy list, but the corpus does not contain a verified current list. It cannot establish today's membership or Canada's current status without an up-to-date official source.",
+    "scenario_based": false,
+    "split": "test",
+    "review_status": "reviewed",
+    "review_notes": "امتناع صحيح بالنسبة إلى corpus الثابت: لا يحتوي قائمة حالية موثقة للدول. لا يكفي نص تنظيم تقييم الحماية لإثبات إدراج كندا اليوم، ولا يستلزم ذلك تغيير التصنيف بسبب اختلاف إصدار لائحة النقل."
+  }
+]

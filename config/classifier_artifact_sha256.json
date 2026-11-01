@@ -1,0 +1,8 @@
+{
+  "config.json": "d47e614baa940d2bf051d621daeba83866c82d071ed7e67d79f086cbdf1a403e",
+  "model.safetensors": "4ae3eac8a1ce8148802aa091624ee3a4e0cd563d7d39353a1a4f6394969c4fe8",
+  "results.json": "0ed9fd7e674ad6ce6d156ebaee8c5aa9b4a3caf28c43204906fb43784dff0594",
+  "test_predictions.csv": "64daa79f1e6fa450176e9d59e37d60fc7d3bc8a01bd661f20ac7b2c153a7fae7",
+  "tokenizer.json": "0d3aef594edd5f9b53e7f814277a9171dc70ff93eb66bda6e01f7aa53997d963",
+  "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+}

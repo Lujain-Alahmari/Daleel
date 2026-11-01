@@ -1,0 +1,45 @@
+{
+  "experiment": "rag_new_test20_v1",
+  "candidate": "roles prompt only; source and requirement evidence checks retained",
+  "questions": 20,
+  "arabic": 10,
+  "english": 10,
+  "answerable": 16,
+  "unanswerable": 4,
+  "accepted_answerable_answers": 14,
+  "correct_abstentions": 4,
+  "false_refusals": 0,
+  "execution_errors": 2,
+  "execution_success_rate": 0.9,
+  "errors": [
+    {
+      "id": "nq006",
+      "error": "Gemini request failed (HTTP 400). Check the API key and request configuration."
+    },
+    {
+      "id": "nq012",
+      "error": "Covered requirement lacks the clause or its scope evidence."
+    }
+  ],
+  "role_metadata_errors": 0,
+  "accepted_answerable_mean_scores_out_of_2": {
+    "correctness": 2.0,
+    "relevance": 2.0,
+    "citation_support": 1.929,
+    "necessary_completeness": 2.0
+  },
+  "full_four_criteria_answers": 13,
+  "accepted_answerable_denominator": 14,
+  "full_four_criteria_over_all_answerable": {
+    "numerator": 13,
+    "denominator": 16
+  },
+  "review_method": "Comparison against the frozen local source texts and selected source spans; independent human grading/agreement pending.",
+  "limitations": [
+    "20-question sample; only four unanswerable questions.",
+    "Semantic means cover accepted answers only and exclude errors and abstentions.",
+    "Reference membership and exact quotes do not establish legal correctness by themselves.",
+    "No claim of current official legal-text verification or universal reliability."
+  ],
+  "API_calls_for_review": 0
+}

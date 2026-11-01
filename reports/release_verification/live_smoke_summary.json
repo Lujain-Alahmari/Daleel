@@ -1,0 +1,31 @@
+{
+  "scope": "Live smoke, not benchmark or UI screenshot",
+  "cases": [
+    {
+      "id": "legal",
+      "status": "answered",
+      "cited_source_ids": [
+        "pdpl:12:ar"
+      ],
+      "elapsed_seconds": 95.1
+    },
+    {
+      "id": "outside",
+      "status": "not_covered",
+      "cited_source_ids": [],
+      "elapsed_seconds": 68.7
+    },
+    {
+      "id": "classifier",
+      "status": "classification_completed",
+      "paragraphs": 5
+    },
+    {
+      "id": "policy_analysis",
+      "status": "error",
+      "error_type": "RuntimeError",
+      "completed_requirements": 0
+    }
+  ],
+  "maximum_API_calls": 20
+}

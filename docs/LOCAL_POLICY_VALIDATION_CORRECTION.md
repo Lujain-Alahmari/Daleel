@@ -1,0 +1,7 @@
+## Whitespace-only evidence validation correction
+
+The same ten-policy model responses were revalidated with a documented correction that collapses whitespace runs solely for evidence matching. The verifier returns the exact original source span and its offsets. It does not change words, case, punctuation, spelling or reference labels, and does not join disconnected passages. This accepted 53 whitespace-only check quotations; 38 previously rejected requirement outputs became valid. No new API calls or model generations were used. The original experiment and scores remain archived.
+
+Exact text-status accuracy increased from 34.4% (43/125) to **60.8% (76/125)**. Macro F1 over the three supported text classes increased from 0.4543 to **0.5757**. Validated requirement outputs increased from 110/180 to **148/180**, with **32 errors retained**. Secondary all-status agreement was 50.0% (90/180). These are status-comparison results for the separate batched policy experiment, not legal-compliance accuracy, semantic evidence entailment, or RAG question-answering performance.
+
+The reference's 55 unresolved external/conditional judgments remain excluded from the primary text denominator. The reference was unchanged and is document-based, without independently confirmed team annotation or reviewer-agreement measurement. This correction addresses formatting-related false rejections; remaining model-quotation and coverage errors remain unresolved. It is a post-run validation correction on the same responses, not an independent new held-out evaluation.
